@@ -29,7 +29,7 @@ title: Sections
     - [Summary - Резюме](./using-atom/sections/summary-rus.md)
 
 
-  - [Hacking Atom - Взлом Atom'a](./hacking-atom/index-rus.md)
+- [Hacking Atom - Взлом Atom'a](./hacking-atom/index-rus.md)
     - [Tools of the Trade - Инструменты торговли](./hacking-atom/sections/tools-of-the-trade-rus.md)
     - [The Init File - Файл инициализации](./hacking-atom/sections/the-init-file-rus.md)
     - [Package: Word Count - Пакет: Количество слов](./hacking-atom/sections/package-word-count-rus.md)
