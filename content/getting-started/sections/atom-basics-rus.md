@@ -172,40 +172,44 @@ Tree View позволяет вам исследовать и изменять �
 
 **Atom Packages**
 
-Like many parts of Atom, the Tree View is not built directly into the editor, but is its own standalone package that is shipped with Atom by default. Packages that are bundled with Atom are referred to as Core packages. Ones that aren't bundled with Atom are referred to as Community packages.
+Как и многие другие части Atom, Tree View не встроен непосредственно в редактор, а представляет собой отдельный пакет, который по умолчанию поставляется с Atom. Пакеты, связанные с Atom, называются Core Packages. Те, которые не связаны с Atom, называются Community Packages.
 
-You can find the source code to the Tree View on GitHub at https://github.com/atom/tree-view.
+Вы можете найти исходный код для представления дерева на GitHub по адресу https://github.com/atom/tree-view.
 
-This is one of the interesting things about Atom. Many of its core features are actually just packages implemented the same way you would implement any other functionality. This means that if you don't like the Tree View for example, you could write your own implementation of that functionality and replace it entirely.
+
+Это одна из интересных вещей об Atom. Многие из его основных функций на самом деле представляют собой просто пакеты, реализованные так же, как и любые другие функции. Это означает, что если вам не нравится, например, Tree View, вы можете написать собственную реализацию этой функциональности и полностью ее заменить.
 
 {{/note}}
 
 ##### Opening a File in a Project
+**Открытие Файла в Проекте**
 
-Once you have a project open in Atom, you can easily find and open any file within that project.
+Когда у вас есть проект, открытый в Atom, вы можете легко найти и открыть любой файл в этом проекте.
 
-If you press <kbd class="platform-mac">Cmd+T</kbd><kbd class="platform-windows platform-linux">Ctrl+T</kbd> or <kbd class="platform-mac">Cmd+P</kbd><kbd class="platform-windows platform-linux">Ctrl+P</kbd>, the Fuzzy Finder will pop up. This will let you quickly search for any file in your project by typing parts of the path.
+Если вы нажмете <kbd class="platform-mac">Cmd+T</kbd><kbd class="platform-windows platform-linux">Ctrl+T</kbd> или <kbd class="platform-mac">Cmd+P</kbd><kbd class="platform-windows platform-linux">Ctrl+P</kbd>, появится Fuzzy Finder. Это позволит вам быстро найти любой файл в вашем проекте, набрав части пути.
 
 ![Opening files with the Fuzzy Finder](../../images/finder.png "Opening files with the Fuzzy Finder")
+![Opening files with the Fuzzy Finder](../images/finder.png "Opening files with the Fuzzy Finder")
 
-You can also search through only the files currently opened (rather than every file in your project) with <kbd class="platform-mac">Cmd+B</kbd><kbd class="platform-windows platform-linux">Ctrl+B</kbd>. This searches through your "buffers" or open files. You can also limit this fuzzy search with <kbd class="platform-mac">Cmd+Shift+B</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+B</kbd>, which searches only through the files which are new or have been modified since your last Git commit.
+Вы также можете выполнять поиск только в тех файлах, которые в данный момент открыты (а не в каждом файле в вашем проекте) с помощью <kbd class="platform-mac">Cmd+B</kbd><kbd class="platform-windows platform-linux">Ctrl+B</kbd>. Это поиск через ваши "буферы" или открытые файлы. Вы также можете ограничить Fuzzy Finder с помощью <kbd class="platform-mac">Cmd+Shift+B</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+B</kbd>, который ищет только те файлы, которые являются новыми или были изменены с момента вашей последнего Git Commit'a.
 
-The fuzzy finder uses the `core.ignoredNames`, `fuzzy-finder.ignoredNames` and `core.excludeVCSIgnoredPaths` configuration settings to filter out files and folders that will not be shown. If you have a project with tons of files you don't want it to search through, you can add patterns or paths to either of these config settings or your [standard `.gitignore` files](https://git-scm.com/docs/gitignore). We'll learn more about config settings in [Global Configuration Settings](/using-atom/sections/basic-customization/#global-configuration-settings), but for now you can easily set these in the Settings View under Core Settings.
+Fuzzy Finder использует `core.ignoredNames`, `fuzzy-finder.ignoredNames` и `core.excludeVCSIgnoredPaths` параметры конфигурации , чтобы отфильтровать файлы и папки , которые не будут показаны. Если у вас есть проект с тоннами файлов, которые вы не хотите, чтобы он просматривал, вы можете добавить шаблоны или пути к любому из этих параметров конфигурации или к вашим [стандартным `.gitignore` файлам](https://git-scm.com/docs/gitignore). Мы узнаем больше о настройках конфигурации в [Глобальных Параметрах Конфигураций](/using-atom/sections/basic-customization/#global-configuration-settings), но сейчас вы можете легко установить их в Settings View в разделе Core Settings.
 
-Both `core.ignoredNames` and `fuzzy-finder.ignoredNames` are interpreted as glob patterns as implemented by the [minimatch Node module](https://github.com/isaacs/minimatch).
+И то `core.ignoredNames` и другое `fuzzy-finder.ignoredNames` интерпретируется как шаблоны glob, реализованные [модулем Node minimatch](https://github.com/isaacs/minimatch).
 
 {{#tip}}
 
 **Configuration Setting Notation**
+**Обозначение Параметров Конфигурации**
 
-Sometimes you'll see us refer to configuration settings all spelled out like "Ignored Names in Core Settings". Other times you'll see us use the shorthand name like `core.ignoredNames`. Both of these refer to the same thing. The shorthand is the package name, then a dot `.`, followed by the "camel-cased" name of the setting.
+Иногда вы увидите, что мы обращаемся к настройкам конфигурации, которые прописаны как "Ignored Names" в "Core Settings". В других случаях вы увидите, как мы используем сокращенное имя, например `core.ignoredNames`. Оба из них относятся к одному и тому же. Сокращенное обозначение - это имя пакета, затем точка `.`, за которой следует название настройки в "camelCased".
 
-If you have a phrase you want to camel-case, follow these steps:
+Если у вас есть фраза, которую вы хотите использовать в случае верблюда, выполните следующие действия:
 
-1. Lowercase the first word
-1. Capitalize the first letter in all other words
-1. Remove the spaces
+1. Все буквы первого слова в нижнем регистре
+1. Первая буква во всех последующих словах верхний регистр
+1. Удалить пробелы
 
-So "Ignored Names" becomes "ignoredNames".
+Таким образом, "Ignored Names" становится "ignoredNames".
 
 {{/tip}}
