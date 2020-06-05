@@ -2,69 +2,77 @@
 title: Atom Packages
 ---
 ### Atom Packages
+**Atom Пакеты**
 
-First we'll start with the Atom package system. As we mentioned previously, Atom itself is a very basic core of functionality that ships with a number of useful packages that add new features like the [Tree View](https://github.com/atom/tree-view) and the [Settings View](https://github.com/atom/settings-view).
+Сначала мы начнем с системы пакетов Atom. Как мы упоминали ранее, сам Atom - это базовое ядро ​​функциональности, которое поставляется с рядом полезных пакетов, которые добавляют новые функции, такие как [Tree View](https://github.com/atom/tree-view) и [Settings View](https://github.com/atom/settings-view).
 
-In fact, there are more than 80 packages that comprise all of the functionality that is available in Atom by default. For example, the [Welcome screen](https://github.com/atom/welcome) that you see when you first start Atom, the [spell checker](https://github.com/atom/spell-check), the [themes](https://github.com/atom/one-dark-ui) and the [Fuzzy Finder](https://github.com/atom/fuzzy-finder) are all packages that are separately maintained and all use the same APIs that you have access to, as we'll see in great detail in [Hacking Atom](/hacking-atom/).
+На самом деле, существует более 80 пакетов, которые содержат все функции, доступные в Atom по умолчанию. Например, [Welcome Screen](https://github.com/atom/welcome) который вы видите при первом запуске Atom, [Spell Checker](https://github.com/atom/spell-check), [Themes](https://github.com/atom/one-dark-ui) и [Fuzzy Finder](https://github.com/atom/fuzzy-finder) a- это пакеты, которые обслуживаются отдельно и все используют те же API, к которым у вас есть доступ, как мы увидим в главе [Взлом Atom'a](/hacking-atom/).
 
-This means that packages can be incredibly powerful and can change everything from the very look and feel of the entire interface to the basic operation of even core functionality.
+Это означает, что пакеты могут быть невероятно мощными и могут изменить все: от внешнего вида всего интерфейса до базовой работы даже основных функций.
 
-In order to install a new package, you can use the Install tab in the now familiar Settings View. Open up the Settings View using <kbd class="platform-mac">Cmd+,</kbd><kbd class="platform-windows platform-linux">Ctrl+,</kbd>, click on the "Install" tab and type your search query into the box under Install Packages.
+Чтобы установить новый пакет, вы можете использовать вкладку Install в привычном Settings View. Откройте Settings View с помощью <kbd class="platform-mac">Cmd+,</kbd><kbd class="platform-windows platform-linux">Ctrl+,</kbd>, нажмите на вкладку "Install" и введите свой поисковый запрос в поле Install Packages.
 
-The packages listed here have been published to https://atom.io/packages which is the official registry for Atom packages. Searching on the Settings View will go to the Atom package registry and pull in anything that matches your search terms.
+Перечисленные здесь пакеты были опубликованы по адресу https://atom.io/packages, который является официальным реестром пакетов Atom. Поиск в Settings View приведет к переходу в реестр пакетов Atom и загрузит все, что соответствует вашим условиям поиска.
 
 ![Package install screen](../../images/packages-install.png "Package install screen")
+![Package install screen](../images/packages-install.png "Package install screen")
 
-All of the packages will come up with an "Install" button. Clicking that will download the package and install it. Your editor will now have the functionality that the package provides.
+Все пакеты появятся с кнопкой "Install". Нажмите, чтобы загрузить пакет и установить его. Ваш редактор теперь будет иметь функциональные возможности, которые предоставляет пакет.
 
 #### Package Settings
+**Настройки Пакета**
 
-Once a package is installed in Atom, it will show up in the Settings View under the "Packages" tab, along with all the preinstalled packages that come with Atom. To filter the list in order to find one, you can type into search box directly under the "Installed Packages" heading.
+После установки пакета в Atom он будет отображаться в Settings View на вкладке "Packages" вместе со всеми предустановленными пакетами, которые поставляются с Atom. Чтобы отфильтровать список, чтобы найти его, вы можете ввести его в поле поиска прямо под заголовком "Installed Packages".
 
 ![Package settings screen](../../images/package-specific-settings.png "Package settings screen")
+![Package settings screen](../images/package-specific-settings.png "Package settings screen")
 
-Clicking on the "Settings" button for a package will give you the settings screen for that package specifically. Here you have the option of changing some of the default variables for the package, seeing what all the command keybindings are, disabling the package temporarily, looking at the source code, seeing the current version of the package, reporting issues and uninstalling the package.
+Нажав на кнопку "Settings" для пакета, вы увидите экран настроек для этого пакета. Здесь у вас есть возможность изменить некоторые переменные по умолчанию для пакета, посмотреть, каковы все сочетания клавиш команды, временно отключить пакет, посмотреть исходный код, посмотреть текущую версию пакета, сообщить о проблемах и удалить пакет.
 
-If a new version of any of your packages is released, Atom will automatically detect it and you can upgrade the package from either this screen or from the "Updates" tab. This helps you easily keep all your installed packages up to date.
+Если выпущена новая версия любого из ваших пакетов, Atom автоматически обнаружит ее, и вы можете обновить пакет либо с этого экрана, либо с вкладки "Updates". Это поможет вам легко обновлять все установленные пакеты.
 
 #### Atom Themes
+**Atom Темы**
 
-You can also find and install new themes for Atom from the Settings View. These can be either UI themes or syntax themes and you can search for them from the "Install" tab, just like searching for new packages. Make sure to press the "Themes" toggle next to the search box.
+Вы также можете найти и установить новые темы для Atom из Settings View. Это могут быть либо темы UI, либо темы Syntax, и вы можете искать их на вкладке "Install", как и при поиске новых пакетов. Обязательно нажмите кнопку "Themes" рядом с окном поиска.
 
 ![Theme search screen](../../images/themes.png "Theme search screen")
+![Theme search screen](../images/themes.png "Theme search screen")
 
-Clicking on the theme title will take you to a profile page for the theme on atom.io, which often has a screenshot of the theme. This way you can see what it looks like before installing it.
+Нажав на заголовок темы, вы попадете на страницу профиля для темы на atom.io, на которой часто есть скриншот темы. Таким образом, вы можете увидеть, как он выглядит перед установкой.
 
-Clicking on "Install" will install the theme and make it available in the Theme dropdowns as we saw in [Changing the Theme](/getting-started/sections/atom-basics/#changing-the-theme).
+Нажатие "Install" установит тему и сделает ее доступной в раскрывающихся списках тем, как мы видели в разделе [Смена Темы](/getting-started/sections/atom-basics/#changing-the-theme).
 
 ![Example of the Unity UI theme with Monokai syntax theme](../../images/unity-theme.png "Example of the Unity UI theme with Monokai syntax theme")
+![Example of the Unity UI theme with Monokai syntax theme](../images/unity-theme.png "Example of the Unity UI theme with Monokai syntax theme")
 
 #### Command Line
+**Командная Строка**
 
-You can also install packages or themes from the command line using `apm`.
+Вы также можете установить пакеты или темы из командной строки, используя `apm`.
 
 {{#tip}}
 
-Check that you have `apm` installed by running the following command in your terminal:
+Убедитесь, что вы установили `apm`, запустив следующую команду в вашем терминале:
 
 ``` command-line
 $ apm help install
 ```
 
-You should see a message print out with details about the `apm install` command.
+Вы должны увидеть распечатанное сообщение с подробной информацией о команде `apm install`.
 
-If you do not, see the [Installing Atom section](/getting-started/sections/installing-atom) for instructions on how to install the `atom` and `apm` commands for your system.
+Если вы не видите, вернитесь к разделу [Установка Atom](/getting-started/sections/installing-atom) для получения инструкций о том, как установить команды `atom` и `apm` для вашей системы.
 
 {{/tip}}
 
-You can also install packages by using the `apm install` command:
+Вы также можете установить пакеты с помощью команды `apm install`:
 
-* `apm install <package_name>` to install the latest version.
-* `apm install <package_name>@<package_version>` to install a specific version.
+* `apm install <package_name>` установить последнюю версию.
+* `apm install <package_name>@<package_version>` установить конкретную версию.
 
-For example `apm install emmet@0.1.5` installs the `0.1.5` release of the [Emmet](https://github.com/atom/emmet) package.
+Например, `apm install emmet@0.1.5` устанавливает `0.1.5` выпуск пакета [Emmet](https://github.com/atom/emmet).
 
-You can also use `apm` to find new packages to install. If you run `apm search`, you can search the package registry for a search term.
+Вы также можете использовать `apm`, чтобы найти новые пакеты для установки. Если вы запустите `apm search`, вы можете выполнить поиск в реестре пакетов по запросу.
 
 ``` command-line
 $ apm search coffee
@@ -79,7 +87,7 @@ $ apm search coffee
 > └── slontech-syntax Dark theme for web developers ( HTML, CSS/LESS, PHP, MYSQL, javascript, AJAX, coffee, JSON ) (2018 downloads, 3 stars)
 ```
 
-You can use `apm view` to see more information about a specific package.
+Вы можете использовать `apm view`, чтобы увидеть больше информации о конкретном пакете.
 
 ``` command-line
 $ apm view build-coffee
