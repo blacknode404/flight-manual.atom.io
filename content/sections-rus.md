@@ -25,7 +25,7 @@ title: Sections
     - [Version Control in Atom - Контроль версий в Atom](./sections/version-control-in-atom-rus.md)
     - [GitHub package - Пакет GitHub](./using-atom/sections/github-package-rus.md)
     - [Writing in Atom - Запись в Atom](./using-atom/sections/writing-in-atom-rus.md)
-    - [Basic Customization - Основные настройки](./using-atom/sections/basic-customization-rus.md)
+    - [Basic Customization - Основные Настройки](./using-atom/sections/basic-customization-rus.md)
     - [Summary - Резюме](./using-atom/sections/summary-rus.md)
 
 
@@ -35,7 +35,7 @@ title: Sections
     - [Package: Word Count - Пакет: Количество слов](./hacking-atom/sections/package-word-count-rus.md)
     - [Package: Modifying Text - Пакет: Изменение текста](./hacking-atom/sections/package-modifying-text-rus.md)
     - [Package: Active Editor Info - Пакет: Информация об активном редакторе](./hacking-atom/sections/package-active-editor-info-rus.md)
-    - [Creating a Theme - Создание темы](./hacking-atom/sections/creating-a-theme-rus.md)
+    - [Creating a Theme - Создание Темы](./hacking-atom/sections/creating-a-theme-rus.md)
     - [Creating a Grammar - Создание грамматики](./hacking-atom/sections/creating-a-grammar-rus.md)
     - [Creating a Legacy TextMate Grammar - Создание устаревшей грамматики TextMate](./hacking-atom/sections/creating-a-legacy-textmate-grammar-rus.md)
     - [Publishing - Публикация](./hacking-atom/sections/publishing-rus.md)
