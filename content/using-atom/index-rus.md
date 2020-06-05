@@ -2,7 +2,8 @@
 title: Using Atom
 ---
 ## Using Atom
+**Использование Atom**
 
-Now that we've covered the very basics of Atom, we are ready to see how to really start getting the most out of using it. In this chapter we'll look at how to find and install new packages in order to add new functionality, how to find and install new themes, how to work with and manipulate text in a more advanced way, how to customize the editor in any way you wish, how to work with Git for version control and more.
+Теперь, когда мы рассмотрели самые основы Atom, мы готовы увидеть, как действительно начать получать максимальную отдачу от его использования. В этой главе мы рассмотрим, как найти и установить новые пакеты для добавления новых функциональных возможностей, как найти и установить новые темы, как работать с текстом и управлять им более сложным способом, как настроить редактор в любом Как вы хотите, как работать с Git для контроля версий и многое другое.
 
-At the end of this chapter, you should have a customized environment that you're comfortable in and you should be able to change, create and move through your text like a master.
+В конце этой главы у вас должна быть настроенная среда, в которой вы чувствуете себя комфортно, и вы должны иметь возможность изменять, создавать и перемещать текст как мастер.
