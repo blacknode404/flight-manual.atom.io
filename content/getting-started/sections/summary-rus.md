@@ -2,7 +2,8 @@
 title: Summary
 ---
 ### Summary
+**Резюме**
 
-You should now have a basic understanding of what Atom is and what you want to do with it. You should also have it installed on your system and be able to use it for the most basic text editing operations.
+Теперь вы должны иметь общее представление о том, что такое Atom и что вы хотите с ним делать. Вы также должны установить его в своей системе и иметь возможность использовать его для самых основных операций редактирования текста.
 
-Now you're ready to start digging into the fun stuff.
+Теперь вы готовы начать копаться в веселье.
