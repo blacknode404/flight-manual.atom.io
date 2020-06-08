@@ -2,50 +2,53 @@
 title: Moving in Atom
 ---
 ### Moving in Atom
+**Переезд в Atom**
 
-While it's pretty easy to move around Atom by clicking with the mouse or using the arrow keys, there are some keybindings that may help you keep your hands on the keyboard and navigate around a little faster.
+Хотя довольно легко перемещаться по Atom, щелкая мышью или используя клавиши со стрелками, есть некоторые сочетания клавиш, которые могут помочь вам держать руки на клавиатуре и перемещаться немного быстрее.
 
 {{#mac}}
 
-Atom ships with many of the basic Emacs keybindings for navigating a document. To go up and down a single character, you can use <kbd class="platform-mac">Ctrl+P</kbd> and <kbd class="platform-mac">Ctrl+N</kbd>. To go left and right a single character, you can use <kbd class="platform-mac">Ctrl+B</kbd> and <kbd class="platform-mac">Ctrl+F</kbd>. These are the equivalent of using the arrow keys, though some people prefer not having to move their hands to where the arrow keys are located on their keyboard.
+Atom поставляется со многими основными комбинациями клавиш Emacs для навигации по документу. Для перехода вверх и вниз на один символ вы можете использовать <kbd class="platform-mac">Ctrl+P</kbd> и <kbd class="platform-mac">Ctrl+N</kbd>. Чтобы перейти влево и вправо на один символ, вы можете использовать <kbd class="platform-mac">Ctrl+B</kbd> и <kbd class="platform-mac">Ctrl+F</kbd>. Это эквивалентно использованию клавиш со стрелками, хотя некоторые люди предпочитают не перемещать руки туда, где расположены клавиши со стрелками на клавиатуре.
 
-In addition to single character movement, there are a number of other movement keybindings:
+В дополнение к движению одного персонажа, существует ряд других сочетаний клавиш движения:
 
 {{/mac}}
 
 {{#windows}}
 
-Atom has support for all the standard Windows cursor movement key combinations. To go up, down, left or right a single character you can use the arrow keys.
+Atom поддерживает все стандартные комбинации клавиш перемещения курсора Windows. Для перехода вверх, вниз, влево или вправо на один символ вы можете использовать клавиши со стрелками.
 
-In addition to single character movement, there are a number of other movement keybindings:
+В дополнение к движению одного персонажа, существует ряд других сочетаний клавиш движения:
 
 {{/windows}}
 
 {{#linux}}
 
-Atom has support for all the standard Linux cursor movement key combinations. To go up, down, left or right a single character you can use the arrow keys.
+Atom поддерживает все стандартные комбинации клавиш перемещения курсора в Linux. Для перехода вверх, вниз, влево или вправо на один символ вы можете использовать клавиши со стрелками.
 
-In addition to single character movement, there are a number of other movement keybindings:
+В дополнение к движению одного персонажа, существует ряд других сочетаний клавиш движения:
 
 {{/linux}}
 
-* <span class="platform-mac"><kbd class="platform-mac">Alt+Left</kbd> or <kbd class="platform-mac">Alt+B</kbd></span><kbd class="platform-windows platform-linux">Ctrl+Left</kbd> - Move to the beginning of word
-* <span class="platform-mac"><kbd class="platform-mac">Alt+Right</kbd> or <kbd class="platform-mac">Alt+F</kbd></span><kbd class="platform-windows platform-linux">Ctrl+Right</kbd> - Move to the end of word
-* <span class="platform-mac"><kbd class="platform-mac">Cmd+Left</kbd> or <kbd class="platform-mac">Ctrl+A</kbd></span><kbd class="platform-windows platform-linux">Home</kbd> - Move to the first character of the current line
-* <span class="platform-mac"><kbd class="platform-mac">Cmd+Right</kbd> or <kbd class="platform-mac">Ctrl+E</kbd></span><kbd class="platform-windows platform-linux">End</kbd> - Move to the end of the line
-* <kbd class="platform-mac">Cmd+Up</kbd><kbd class="platform-windows platform-linux">Ctrl+Home</kbd> - Move to the top of the file
-* <kbd class="platform-mac">Cmd+Down</kbd><kbd class="platform-windows platform-linux">Ctrl+End</kbd> - Move to the bottom of the file
+* <span class="platform-mac"><kbd class="platform-mac">Alt+Left</kbd> или <kbd class="platform-mac">Alt+B</kbd></span><kbd class="platform-windows platform-linux">Ctrl+Left</kbd> - Перейти к началу слова
+* <span class="platform-mac"><kbd class="platform-mac">Alt+Right</kbd> или <kbd class="platform-mac">Alt+F</kbd></span><kbd class="platform-windows platform-linux">Ctrl+Right</kbd> - Перейти к концу слова
+* <span class="platform-mac"><kbd class="platform-mac">Cmd+Left</kbd> или <kbd class="platform-mac">Ctrl+A</kbd></span><kbd class="platform-windows platform-linux">Home</kbd> - Перейти к первому символу текущей строки
+* <span class="platform-mac"><kbd class="platform-mac">Cmd+Right</kbd> или <kbd class="platform-mac">Ctrl+E</kbd></span><kbd class="platform-windows platform-linux">End</kbd> - Перейти к концу строки
+* <kbd class="platform-mac">Cmd+Up</kbd><kbd class="platform-windows platform-linux">Ctrl+Home</kbd> - Перейти к началу файла
+* <kbd class="platform-mac">Cmd+Down</kbd><kbd class="platform-windows platform-linux">Ctrl+End</kbd> - Перейти к концу файла
 
-You can also move directly to a specific line (and column) number with <kbd class="platform-all">Ctrl+G</kbd>. This will bring up a dialog that asks which line you would like to jump to. You can also use the `row:column` syntax to jump to a character in that line as well.
+Вы также можете перейти непосредственно к определенному номеру строки (и столбца) с помощью <kbd class="platform-all">Ctrl+G</kbd>. Это вызовет диалог, который спрашивает, к какой строке вы хотите перейти. Вы также можете использовать `row:column` синтаксис для перехода к символу в этой строке.
 
 ![Go directly to a line](../../images/goto.png "Go directly to a line")
+![Go directly to a line](../images/goto.png "Go directly to a line")
 
 
 #### Additional Movement and Selection Commands
+**Дополнительные Команды Перемещения и Выбора**
 
-Atom also has a few movement and selection commands that don't have keybindings by default. You can access these commands from the [Command Palette](/getting-started/sections/atom-basics/#command-palette), but if you find yourself using commands that don't have a keybinding often, have no fear! You can easily add an entry to your `keymap.cson` to create a key combination. You can open `keymap.cson` file in an editor from the <span class="platform-mac">_Atom > Keymap_</span><span class="platform-windows">_File > Keymap_</span><span class="platform-linux">_Edit > Keymap_</span> menu.
+У Atom также есть несколько команд перемещения и выбора, которые по умолчанию не имеют привязок клавиш. Вы можете получить доступ к этим командам из [Command Palette](/getting-started/sections/atom-basics/#command-palette), но если вы обнаружите, что часто используете команды, которые не имеют привязки клавиш, не бойтесь! Вы можете легко добавить запись в свой, `keymap.cson` чтобы создать комбинацию клавиш. Вы можете открыть `keymap.cson` файл в редакторе из строки меню <span class="platform-mac">_Atom > Keymap_</span> | <span class="platform-windows">_File > Keymap_</span> | <span class="platform-linux">_Edit > Keymap_</span>.
 
-For example, the command `editor:move-to-beginning-of-screen-line` is available in the command palette, but it's not bound to any key combination. To create a key combination you need to add an entry in your `keymap.cson` file. For `editor:select-to-previous-word-boundary`, you can add the following to your `keymap.cson`:
+Например, команда `editor:move-to-beginning-of-screen-line` доступна в Command Palette, но она не привязана ни к одной комбинации клавиш. Чтобы создать комбинацию клавиш, вам нужно добавить запись в ваш файл `keymap.cson`. Для `editor:select-to-previous-word-boundary`, вы можете добавить следующее к вашему `keymap.cson`:
 
 
 {{#mac}}
@@ -69,9 +72,9 @@ For example, the command `editor:move-to-beginning-of-screen-line` is available 
 ```
 {{/linux}}
 
-This will bind the command `editor:select-to-previous-word-boundary` to <kbd class="platform-mac">Cmd+Shift+E</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+E</kbd>.  For more information on customizing your keybindings, see [Customizing Keybindings](/using-atom/sections/basic-customization/#customizing-keybindings).
+Это свяжет команду `editor:select-to-previous-word-boundary` с <kbd class="platform-mac">Cmd+Shift+E</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+E</kbd>. Для получения дополнительной информации о настройке ваших сочетаний клавиш см. [Настройка Привязок Клавиш](/using-atom/sections/basic-customization/#customizing-keybindings).
 
-Here's a list of Movement and Selection Commands that do not have a keyboard shortcut by default:
+Вот список команд перемещения и выбора, которые по умолчанию не имеют сочетаний клавиш:
 
 {{#mac}}
 ```
@@ -138,46 +141,51 @@ editor:select-to-previous-word-boundary
 
 
 #### Navigating by Symbols
+**Навигация по Символам**
 
-You can also jump around a little more informatively with the Symbols View. To jump to a symbol such as a method definition, press <kbd class="platform-mac">Cmd+R</kbd><kbd class="platform-windows platform-linux">Ctrl+R</kbd>. This opens a list of all symbols in the current file, which you can fuzzy filter similarly to <kbd class="platform-mac">Cmd+T</kbd><kbd class="platform-windows platform-linux">Ctrl+T</kbd>. You can also search for symbols across your project but it requires a `tags` file.
+Вы также можете более информативно прыгать вокруг с помощью Symbols View. Чтобы перейти к символу, такому как определение метода, нажмите <kbd class="platform-mac">Cmd+R</kbd><kbd class="platform-windows platform-linux">Ctrl+R</kbd>. Откроется список всех символов в текущем файле, который вы можете применить к Fuzzy Filter аналогично <kbd class="platform-mac">Cmd+T</kbd><kbd class="platform-windows platform-linux">Ctrl+T</kbd>. Вы также можете искать символы в вашем проекте, но для этого требуется файл `tags`.
 
 ![Search by symbol across your project](../../images/symbol.png)
+![Search by symbol across your project](../images/symbol.png)
 
-You can generate a `tags` file by using the [ctags utility](https://ctags.io/). Once it is installed, you can use it to generate a `tags` file by running a command to generate it. See the [ctags documentation](https://docs.ctags.io/en/latest/) for details.
+Вы можете создать `tags` файл с помощью [Ctags Utility](https://ctags.io/). Как только он установлен, вы можете использовать его для создания файла `tags`, выполнив команду для его создания. Подробности смотрите в [Документации по Ctags](https://docs.ctags.io/en/latest/).
 
 {{#mac}}
 
-Once you have your `tags` file generated, you can use it to search for symbols across your project by pressing <kbd class="platform-mac">Cmd+Shift+R</kbd>. This also enables you to use <kbd class="platform-mac">Alt+Cmd+Down</kbd> to go to and <kbd class="platform-mac">Alt+Cmd+Up</kbd> to return from the declaration of the symbol under the cursor.
+Создав файл `tags`, вы можете использовать его для поиска символов в вашем проекте, нажав <kbd class="platform-mac">Cmd+Shift+R</kbd>. Это также позволяет использовать <kbd class="platform-mac">Alt+Cmd+Down</kbd> для перехода и <kbd class="platform-mac">Alt+Cmd+Up</kbd> возврата из объявления символа под курсором.
 
 {{/mac}}
 
 {{#linux}}
 
-Once you have your `tags` file generated, you can use it to search for symbols across your project by pressing <kbd class="platform-windows platform-linux">Ctrl+Shift+R</kbd>. This also enables you to use <kbd class="platform-linux">Alt+Ctrl+Down</kbd> to go to and <kbd class="platform-linux">Alt+Ctrl+Up</kbd> to return from the declaration of the symbol under the cursor.
+Создав файл `tags`, вы можете использовать его для поиска символов в вашем проекте, нажав <kbd class="platform-windows platform-linux">Ctrl+Shift+R</kbd>. Это также позволяет использовать <kbd class="platform-linux">Alt+Ctrl+Down</kbd> для перехода и <kbd class="platform-linux">Alt+Ctrl+Up</kbd> возврата из объявления символа под курсором.
 
 {{/linux}}
 
 {{#windows}}
 
-Once you have your `tags` file generated, you can use it to search for symbols across your project by pressing <kbd class="platform-mac">Cmd+Shift+R</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+R</kbd>.
+Создав файл `tags`, вы можете использовать его для поиска символов в вашем проекте, нажав <kbd class="platform-mac">Cmd+Shift+R</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+R</kbd>.
 
 {{/windows}}
 
-You can customize how tags are generated by creating your own `.ctags` file in your home directory, <span class="platform-mac platform-linux">`~/.ctags`</span><span class="platform-windows">`%USERPROFILE%\.ctags`</span>. An example can be found [here](https://github.com/atom/symbols-view/blob/master/lib/ctags-config).
+Вы можете настроить способ создания тегов, создав собственный `.ctags` файл в своем домашнем каталоге, <span class="platform-mac platform-linux">`~/.ctags`</span> <span class="platform-windows">`%USERPROFILE%\.ctags`</span>. Пример можно найти [здесь](https://github.com/atom/symbols-view/blob/master/lib/ctags-config).
 
-The symbols navigation functionality is implemented in the [symbols-view](https://github.com/atom/symbols-view) package.
+Функциональность навигации по символам реализована в пакете [Symbols View](https://github.com/atom/symbols-view).
 
 #### Bookmarks
+**Закладки**
 
-Atom also has a great way to bookmark specific lines in your project so you can jump back to them quickly.
+У Atom также есть отличный способ отметить отдельные строки в вашем проекте, чтобы вы могли быстро вернуться к ним.
 
-If you press <kbd class="platform-mac">Cmd+F2</kbd><kbd class="platform-windows">Alt+Ctrl+F2</kbd><kbd class="platform-linux">Ctrl+Shift+F2</kbd>, Atom will toggle a "bookmark" on the current line. You can set these throughout your project and use them to quickly find and jump to important lines of your project. A small bookmark symbol is added to the line gutter, like on line 22 of [the image below](#bookmarks-image).
+Если вы нажмете <kbd class="platform-mac">Cmd+F2</kbd><kbd class="platform-windows">Alt+Ctrl+F2</kbd><kbd class="platform-linux">Ctrl+Shift+F2</kbd>, Atom переключит "bookmark" в текущей строке. Вы можете установить их в своем проекте и использовать их для быстрого поиска и перехода к важным строкам вашего проекта. Небольшой символ закладки добавляется к желобу линии, как в строке 22 [изображения ниже](#bookmarks-image).
 
-If you hit <kbd class="platform-all">F2</kbd>, Atom will jump to the next bookmark in the file you currently have focused. If you use <kbd class="platform-all">Shift+F2</kbd> it will cycle backwards through them instead.
+Если вы нажмете <kbd class="platform-all">F2</kbd>, Atom перейдет к следующей закладке в файле, который вы сейчас сфокусировали. Если вы используете <kbd class="platform-all">Shift+F2</kbd>, он будет переключаться на них в обратном направлении.
 
-You can also see a list of all your project's current bookmarks and quickly filter them and jump to any of them by hitting <kbd class="platform-all">Ctrl+F2</kbd>.
+Вы также можете просмотреть список всех текущих закладок вашего проекта, быстро отфильтровать их и перейти к любой из них, нажав <kbd class="platform-all">Ctrl+F2</kbd>.
 
 <a name="bookmarks-image"/>
 ![View and filter bookmarks](../../images/bookmarks.png "View and filter bookmarks")
 
-The bookmarks functionality is implemented in the [bookmarks](https://github.com/atom/bookmarks) package.
+![View and filter bookmarks](../images/bookmarks.png "View and filter bookmarks")
+
+Функциональность закладок реализована в пакете [Bookmarks](https://github.com/atom/bookmarks).
