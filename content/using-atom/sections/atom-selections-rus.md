@@ -2,29 +2,30 @@
 title: Atom Selections
 ---
 ### Atom Selections
+**Выборка в Atom**
 
-Text selections in Atom support a number of actions, such as scoping deletion, indentation and search actions, and marking text for actions such as quoting and bracketing.
+Выделение текста в Atom поддерживает ряд действий, таких как удаление области, отступы и действия поиска, а также маркировка текста для таких действий, как цитирование и заключение в скобки.
 
-Selections mirror many of the movement commands. They're actually exactly the same keybindings as the movement commands, but with a <kbd class="platform-all">Shift</kbd> key added in.
+Выборка отражает многие из команд движения. На самом деле они точно такие же, как и команды перемещения, но с добавленной клавишей <kbd class="platform-all">Shift</kbd>.
 
-* <kbd class="platform-all">Shift+Up</kbd><span class="platform-mac"> or <kbd class="platform-mac">Ctrl+Shift+P</kbd></span> - Select up
-* <kbd class="platform-all">Shift+Down</kbd><span class="platform-mac"> or <kbd class="platform-mac">Ctrl+Shift+N</kbd></span> - Select down
-* <kbd class="platform-all">Shift+Left</kbd><span class="platform-mac"> or <kbd class="platform-mac">Ctrl+Shift+B</kbd></span> - Select previous character
-* <kbd class="platform-all">Shift+Right</kbd><span class="platform-mac"> or <kbd class="platform-mac">Ctrl+Shift+F</kbd></span> - Select next character
-* <kbd class="platform-mac">Alt+Shift+Left</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+Left</kbd><span class="platform-mac"> or <kbd class="platform-mac">Alt+Shift+B</kbd></span> - Select to beginning of word
-* <kbd class="platform-mac">Alt+Shift+Right</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+Right</kbd><span class="platform-mac"> or <kbd class="platform-mac">Alt+Shift+F</kbd></span> - Select to end of word
-* <kbd class="platform-mac">Cmd+Shift+Right</kbd><kbd class="platform-windows platform-linux">Shift+End</kbd><span class="platform-mac"> or <kbd class="platform-mac">Ctrl+Shift+E</kbd></span> - Select to end of line
-* <kbd class="platform-mac">Cmd+Shift+Left</kbd><kbd class="platform-windows platform-linux">Shift+Home</kbd><span class="platform-mac"> or <kbd class="platform-mac">Ctrl+Shift+A</kbd></span> - Select to first character of line
-* <kbd class="platform-mac">Cmd+Shift+Up</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+Home</kbd> - Select to top of file
-* <kbd class="platform-mac">Cmd+Shift+Down</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+End</kbd> - Select to bottom of file
+* <kbd class="platform-all">Shift+Up</kbd><span class="platform-mac"> или <kbd class="platform-mac">Ctrl+Shift+P</kbd></span> - Выберите вверх
+* <kbd class="platform-all">Shift+Down</kbd><span class="platform-mac"> или <kbd class="platform-mac">Ctrl+Shift+N</kbd></span> - Выберите вниз
+* <kbd class="platform-all">Shift+Left</kbd><span class="platform-mac"> или <kbd class="platform-mac">Ctrl+Shift+B</kbd></span> - Выберите предыдущий символ
+* <kbd class="platform-all">Shift+Right</kbd><span class="platform-mac"> или <kbd class="platform-mac">Ctrl+Shift+F</kbd></span> - Выберите следующий символ
+* <kbd class="platform-mac">Alt+Shift+Left</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+Left</kbd><span class="platform-mac"> или <kbd class="platform-mac">Alt+Shift+B</kbd></span> - Выберите до начала слова
+* <kbd class="platform-mac">Alt+Shift+Right</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+Right</kbd><span class="platform-mac"> или <kbd class="platform-mac">Alt+Shift+F</kbd></span> - Выберите до конца слова
+* <kbd class="platform-mac">Cmd+Shift+Right</kbd><kbd class="platform-windows platform-linux">Shift+End</kbd><span class="platform-mac"> или <kbd class="platform-mac">Ctrl+Shift+E</kbd></span> - Выберите до конца строки
+* <kbd class="platform-mac">Cmd+Shift+Left</kbd><kbd class="platform-windows platform-linux">Shift+Home</kbd><span class="platform-mac"> или <kbd class="platform-mac">Ctrl+Shift+A</kbd></span> - Выбрать до первого символа строки
+* <kbd class="platform-mac">Cmd+Shift+Up</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+Home</kbd> - Выберите в начало файла
+* <kbd class="platform-mac">Cmd+Shift+Down</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+End</kbd> - Выберите в конец файла
 
-In addition to the cursor movement selection commands, there are also a few commands that help with selecting specific areas of content.
+В дополнение к командам выбора перемещения курсора, есть также несколько команд, которые помогают в выборе определенных областей содержимого.
 
-* <kbd class="platform-mac">Cmd+A</kbd><kbd class="platform-windows platform-linux">Ctrl+A</kbd> - Select the entire contents of the file
-* <kbd class="platform-mac">Cmd+L</kbd><kbd class="platform-windows platform-linux">Ctrl+L</kbd> - Select the entire line
+* <kbd class="platform-mac">Cmd+A</kbd><kbd class="platform-windows platform-linux">Ctrl+A</kbd> - Выберите все содержимое файла
+* <kbd class="platform-mac">Cmd+L</kbd><kbd class="platform-windows platform-linux">Ctrl+L</kbd> - Выберите всю строку
 
 {{#mac}}
 
-* <kbd class="platform-mac">Ctrl+Shift+W</kbd> - Select the current word
+* <kbd class="platform-mac">Ctrl+Shift+W</kbd> - Выберите текущее слово
 
 {{/mac}}
