@@ -2,15 +2,17 @@
 title: Autocomplete
 ---
 ### Autocomplete
+**Автозаполнение**
 
-If you're still looking to save some typing time, Atom also ships with simple autocompletion functionality.
+Если вы все еще хотите сэкономить время на печать, Atom также поставляется с простой функцией автозаполнения.
 
-The autocomplete system lets you view and insert possible completions in the editor using <kbd class="platform-all">Tab</kbd> or <kbd class="platform-all">Enter</kbd>.
+Система автозаполнения позволяет просматривать и вставлять возможные дополнения в редактор с помощью <kbd class="platform-all">Tab</kbd> или <kbd class="platform-all">Enter</kbd>.
 
 ![Autocomplete menu](../../images/autocomplete.png "Autocomplete menu")
+![Autocomplete menu](../images/autocomplete.png "Autocomplete menu")
 
-By default, the autocomplete system will look through the current open file for strings that match what you're starting to type.
+По умолчанию система автозаполнения просматривает текущий открытый файл на наличие строк, которые соответствуют тому, что вы начинаете вводить.
 
-If you want more options, in the Settings panel for the autocomplete-plus package you can toggle a setting to make autocomplete-plus look for text in all your open buffers rather than just the current file.
+Если вам нужны дополнительные параметры, на панели Settings Panel для пакета autocomplete-plus вы можете переключить параметр, чтобы autocomplete-plus просматривал текст во всех открытых буферах, а не только в текущем файле.
 
-The Autocomplete functionality is implemented in the [autocomplete-plus](https://github.com/atom/autocomplete-plus) package.
+Функция автозаполнения реализована в пакете [autocomplete-plus](https://github.com/atom/autocomplete-plus).
