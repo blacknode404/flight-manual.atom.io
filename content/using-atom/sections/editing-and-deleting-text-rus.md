@@ -2,110 +2,122 @@
 title: Editing and Deleting Text
 ---
 ### Editing and Deleting Text
+**Редактирование и Удаление Текста**
 
-So far we've looked at a number of ways to move around and select regions of a file, so now let's actually change some of that text. Obviously you can type in order to insert characters, but there are also a number of ways to delete and manipulate text that could come in handy.
+Итак, мы рассмотрели несколько способов перемещения и выбора областей файла, поэтому теперь давайте на самом деле изменим часть этого текста. Очевидно, что вы можете печатать, чтобы вставить символы, но есть также несколько способов удаления и манипулирования текстом, который может пригодиться.
 
 #### Basic Manipulation
+**Основные Манипуляции**
 
-There are a handful of cool keybindings for basic text manipulation that might come in handy. These range from moving around lines of text and duplicating lines to changing the case.
+Есть несколько классных комбинаций клавиш, которые могут пригодиться. Они варьируются от перемещения строк текста и дублирующих строк до изменения регистра.
 
-* <kbd class="platform-mac">Cmd+J</kbd><kbd class="platform-windows platform-linux">Ctrl+J</kbd> - Join the next line to the end of the current line
-* <kbd class="platform-mac">Cmd+Ctrl+Up/Down</kbd><kbd class="platform-windows platform-linux">Ctrl+Up/Down</kbd> - Move the current line up or down
-* <kbd class="platform-mac">Cmd+Shift+D</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+D</kbd> - Duplicate the current line
-* <kbd class="platform-mac">Cmd+K</kbd> <kbd class="platform-mac">Cmd+U</kbd><kbd class="platform-windows platform-linux">Ctrl+K</kbd> <kbd class="platform-windows platform-linux">Ctrl+U</kbd> - Upper case the current word
-* <kbd class="platform-mac">Cmd+K</kbd> <kbd class="platform-mac">Cmd+L</kbd><kbd class="platform-windows platform-linux">Ctrl+K</kbd> <kbd class="platform-windows platform-linux">Ctrl+L</kbd> - Lower case the current word
+* <kbd class="platform-mac">Cmd+J</kbd><kbd class="platform-windows platform-linux">Ctrl+J</kbd> - Присоединить следующую строку к концу текущей строки
+* <kbd class="platform-mac">Cmd+Ctrl+Up/Down</kbd><kbd class="platform-windows platform-linux">Ctrl+Up/Down</kbd> - Переместить текущую строку вверх или вниз
+* <kbd class="platform-mac">Cmd+Shift+D</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+D</kbd> - Дублировать текущую строку
+* <kbd class="platform-mac">Cmd+K</kbd> <kbd class="platform-mac">Cmd+U</kbd><kbd class="platform-windows platform-linux">Ctrl+K</kbd> <kbd class="platform-windows platform-linux">Ctrl+U</kbd> -Верхний регистр текущего слова
+* <kbd class="platform-mac">Cmd+K</kbd> <kbd class="platform-mac">Cmd+L</kbd><kbd class="platform-windows platform-linux">Ctrl+K</kbd> <kbd class="platform-windows platform-linux">Ctrl+L</kbd> - Нижний регистр текущего слова
 
 {{#mac}}
 
-* <kbd class="platform-mac">Ctrl+T</kbd> - Transpose characters. This swaps the two characters on either side of the cursor.
+* <kbd class="platform-mac">Ctrl+T</kbd> - Транспонировать персонажей. Это меняет местами два символа по обе стороны от курсора.
 
 {{/mac}}
 
-Atom also has built in functionality to re-flow a paragraph to hard-wrap at a given maximum line length. You can format the current selection to have lines no longer than 80 (or whatever number `editor.preferredLineLength` is set to) characters using <kbd class="platform-mac">Alt+Cmd+Q</kbd><kbd class="platform-windows platform-linux">Alt+Ctrl+Q</kbd>. If nothing is selected, the current paragraph will be reflowed.
+Atom также имеет встроенную функциональность для перетекания абзаца в жесткую переноску при заданной максимальной длине строки. Вы можете отформатировать текущий выбор, чтобы строки были длиной не более 80 (или любого другого числа  `editor.preferredLineLength`), используя <kbd class="platform-mac">Alt+Cmd+Q</kbd><kbd class="platform-windows platform-linux">Alt+Ctrl+Q</kbd>. Если ничего не выбрано, текущий абзац будет перекрашен.
 
 #### Deleting and Cutting
+**Удаление и Вырезание**
 
-You can also delete or cut text out of your buffer with some shortcuts. Be ruthless.
+Вы также можете удалить или вырезать текст из буфера с помощью некоторых ярлыков. Будь безжалостным.
 
-* <kbd class="platform-mac platform-windows platform-linux">Ctrl+Shift+K</kbd> - Delete current line
-* <span class="platform-mac"><kbd class="platform-mac">Alt+Backspace</kbd> or <kbd class="platform-mac">Alt+H</kbd></span><kbd class="platform-windows platform-linux">Ctrl+Backspace</kbd> - Delete to beginning of word
-* <span class="platform-mac"><kbd class="platform-mac">Alt+Delete</kbd> or <kbd class="platform-mac">Alt+D</kbd></span><kbd class="platform-windows platform-linux">Ctrl+Delete</kbd> - Delete to end of word
+* <kbd class="platform-mac platform-windows platform-linux">Ctrl+Shift+K</kbd> - Удалить текущую строку
+* <span class="platform-mac"><kbd class="platform-mac">Alt+Backspace</kbd> или <kbd class="platform-mac">Alt+H</kbd></span><kbd class="platform-windows platform-linux">Ctrl+Backspace</kbd> - Удалить до начала слова
+* <span class="platform-mac"><kbd class="platform-mac">Alt+Delete</kbd> или <kbd class="platform-mac">Alt+D</kbd></span><kbd class="platform-windows platform-linux">Ctrl+Delete</kbd> - Удалить до конца слова
 
 {{#mac}}
 
-* <kbd class="platform-mac">Cmd+Delete</kbd> - Delete to end of line
-* <kbd class="platform-mac">Ctrl+K</kbd> - Cut to end of line
-* <kbd class="platform-mac">Cmd+Backspace</kbd> - Delete to beginning of line
+* <kbd class="platform-mac">Cmd+Delete</kbd> - Удалить до конца строки
+* <kbd class="platform-mac">Ctrl+K</kbd> - Вырезать до конца строки
+* <kbd class="platform-mac">Cmd+Backspace</kbd> - Удалить до начало строки
 
 {{/mac}}
 
 #### Multiple Cursors and Selections
+**Несколько Курсоров и Выборка**
 
-One of the cool things that Atom can do out of the box is support multiple cursors. This can be incredibly helpful in manipulating long lists of text.
+Одна из замечательных вещей, которую Atom может сделать из коробки, - поддержка нескольких курсоров. Это может быть невероятно полезно при работе с длинными списками текста.
 
-* <kbd class="platform-mac">Cmd+Click</kbd><kbd class="platform-windows platform-linux">Ctrl+Click</kbd> - Add a new cursor at the clicked location
-* <kbd class="platform-mac">Ctrl+Shift+Up/Down</kbd><kbd class="platform-windows">Alt+Ctrl+Up/Down</kbd><kbd class="platform-linux">Alt+Shift+Up/Down</kbd> - Add another cursor above/below the current cursor
-* <kbd class="platform-mac">Cmd+D</kbd><kbd class="platform-windows platform-linux">Ctrl+D</kbd> - Select the next word in the document that is the same as the currently selected word
-* <kbd class="platform-mac">Cmd+Ctrl+G</kbd><kbd class="platform-windows platform-linux">Alt+F3</kbd> - Select all words in the document that are the same as the currently selected word
+* <kbd class="platform-mac">Cmd+Click</kbd><kbd class="platform-windows platform-linux">Ctrl+Click</kbd> - Добавить новый курсор в выбранном месте
+* <kbd class="platform-mac">Ctrl+Shift+Up/Down</kbd><kbd class="platform-windows">Alt+Ctrl+Up/Down</kbd><kbd class="platform-linux">Alt+Shift+Up/Down</kbd> - Добавить еще один курсор выше / ниже текущего курсора
+* <kbd class="platform-mac">Cmd+D</kbd><kbd class="platform-windows platform-linux">Ctrl+D</kbd> -  Выберите следующее слово в документе, которое совпадает с текущим выбранным словом
+* <kbd class="platform-mac">Cmd+Ctrl+G</kbd><kbd class="platform-windows platform-linux">Alt+F3</kbd> - Выберите все слова в документе, которые совпадают с текущим выбранным словом
 
 {{#mac}}
 
-* <kbd class="platform-mac">Cmd+Shift+L</kbd> - Convert a multi-line selection into multiple cursors
+* <kbd class="platform-mac">Cmd+Shift+L</kbd> - Преобразование многострочного выделения в несколько курсоров
 
 {{/mac}}
 
-Using these commands you can place cursors in multiple places in your document and effectively execute the same commands in multiple places at once.
+Используя эти команды, вы можете размещать курсоры в нескольких местах документа и эффективно выполнять одни и те же команды в нескольких местах одновременно.
 
 ![Using multiple cursors](../../images/multiple-cursors.gif)
+![Using multiple cursors](../images/multiple-cursors.gif)
 
-This can be incredibly helpful in doing many type of repetitive tasks such as renaming variables or changing the format of some text. You can use this with almost any plugin or command - for example, changing case and moving or duplicating lines.
+Это может быть невероятно полезно при выполнении множества повторяющихся задач, таких как переименование переменных или изменение формата некоторого текста. Вы можете использовать это практически с любым плагином или командой - например, изменяя регистр и перемещая или дублируя строки.
 
-You can also use the mouse to select text with the <kbd class="platform-mac">Cmd</kbd><kbd class="platform-windows platform-linux">Ctrl</kbd> key pressed down to select multiple regions of your text simultaneously.
+Вы также можете использовать мышь для выбора текста с нажатой клавишей <kbd class="platform-mac">Cmd</kbd><kbd class="platform-windows platform-linux">Ctrl</kbd>, чтобы выделить несколько областей вашего текста одновременно.
 
 #### Whitespace
+**Пробелы**
 
-Atom comes with several commands to help you manage the whitespace in your document. One very useful pair of commands converts leading spaces into tabs and converts leading tabs into spaces. If you're working with a document that has mixed whitespace, these commands are great for helping to normalize the file. There are no keybindings for the whitespace commands, so you will have to search your command palette for "Convert Spaces to Tabs" (or vice versa) to run one of these commands.
+Atom поставляется с несколькими командами, которые помогут вам управлять пробелами в вашем документе. Одна очень полезная пара команд преобразует начальные пробелы в табуляцию и преобразует начальные пробелы в пробелы. Если вы работаете с документом со смешанным пробелом, эти команды отлично подходят для нормализации файла. Для команд пробелов нет привязок клавиш, поэтому вам придется искать в Command Palette "Convert Spaces to Tabs" (или наоборот), чтобы выполнить одну из этих команд.
 
-The whitespace commands are implemented in the [atom/whitespace](https://github.com/atom/whitespace) package. The settings for the whitespace commands are managed on the page for the `whitespace` package.
+Команды пробела реализованы в пакете [atom/whitespace](https://github.com/atom/whitespace). Настройки для команд пустого пространства управляются на странице пакета `whitespace`.
 
 ![Managing your whitespace settings](../../images/whitespace.png)
+![Managing your whitespace settings](../images/whitespace.png)
 
 {{#note}}
 
-The "Remove Trailing Whitespace" option is on by default. This means that every time you save any file opened in Atom, it will strip all trailing whitespace from the file. If you want to disable this, go to the `whitespace` package in your settings panel and uncheck that option.
+Параметр "Remove Trailing Whitespace" включен по умолчанию. Это означает, что каждый раз, когда вы сохраняете любой файл, открытый в Atom, он удаляет все завершающие пробелы из файла. Если вы хотите отключить это, перейдите к пакету `whitespace` на панели настроек и снимите этот флажок.
 
 {{/note}}
 
-Atom will also by default ensure that your file has a trailing newline. You can also disable this option on that screen.
+Atom также по умолчанию обеспечит наличие в вашем файле завершающего символа новой строки. Вы также можете отключить эту опцию на этом экране.
 
 #### Brackets
+**Скобки**
+{dasdasd}
+[asdasdasd]
+(asdasd)
+Atom поставляется с интеллектуальным и простым в использовании кронштейном.
 
-Atom ships with intelligent and easy to use bracket handling.
+По умолчанию он будет выделять `[]`, `()`, и `{}` стилизовать скобки, когда ваш курсор находится над ними. Также будут выделены совпадающие теги XML и HTML.
 
-It will by default highlight `[]`, `()`, and `{}` style brackets when your cursor is over them. It will also highlight matching XML and HTML tags.
+Atom автоматически закрывает `[]`, `()`, еще `{}`, `""`, `''`, `“”`, `‘’`, `«»`, `‹›`, при вводе начальной. Если у вас есть выделенная строка, и вы вводите любую из этих открывающих скобок или кавычек, Atom заключит выделенную строку в открывающую и закрывающую скобки или кавычки.
 
-Atom will also automatically autocomplete `[]`, `()`, and `{}`, `""`, `''`, `“”`, `‘’`, `«»`, `‹›`, and backticks when you type the leading one. If you have a selection and you type any of these opening brackets or quotes, Atom will enclose the selection with the opening and closing brackets or quotes.
+Есть несколько других интересных команд, связанных с квадратными скобками, которые вы можете использовать.
 
-There are a few other interesting bracket related commands that you can use.
+* <kbd class="platform-mac platform-windows platform-linux">Ctrl+M</kbd> - Перейти к скобке, соответствующей той, которая находится рядом с курсором. Он переходит к ближайшей скобке, когда нет соседней скобки.
+* <kbd class="platform-mac">Cmd+Ctrl+M</kbd><kbd class="platform-windows platform-linux">Alt+Ctrl+,</kbd> - Выделите весь текст в текущих скобках.
+* <kbd class="platform-mac">Alt+Cmd+.</kbd><kbd class="platform-windows platform-linux">Alt+Ctrl+.</kbd> - Закрыть текущий тег XML/HTML.
 
-* <kbd class="platform-mac platform-windows platform-linux">Ctrl+M</kbd> - Jump to the bracket matching the one adjacent to the cursor. It jumps to the nearest enclosing bracket when there's no adjacent bracket.
-* <kbd class="platform-mac">Cmd+Ctrl+M</kbd><kbd class="platform-windows platform-linux">Alt+Ctrl+,</kbd> - Select all the text inside the current brackets
-* <kbd class="platform-mac">Alt+Cmd+.</kbd><kbd class="platform-windows platform-linux">Alt+Ctrl+.</kbd> - Close the current XML/HTML tag
-
-The brackets functionality is implemented in the [bracket-matcher](https://github.com/atom/bracket-matcher) package. Like all of these packages, to change defaults related to bracket handling, or to disable it entirely, you can navigate to this package in the Settings view.
+Функциональность скобок реализована в пакете [bracket-matcher](https://github.com/atom/bracket-matcher). Как и во всех этих пакетах, чтобы изменить значения по умолчанию, связанные с обработкой скобок, или полностью отключить его, вы можете перейти к этому пакету в Settings View.
 
 #### Encoding
+**Кодировка**
 
-Atom also ships with some basic file encoding support should you find yourself working with non-UTF-8 encoded files, or should you wish to create one.
+Atom также поставляется с некоторой базовой поддержкой кодирования файлов, если вы обнаружите, что работаете с файлами не в кодировке UTF-8, или если вы хотите создать один.
 
-* <kbd class="platform-mac platform-windows">Ctrl+Shift+U</kbd><kbd class="platform-linux">Alt+U</kbd> - Toggle menu to change file encoding
+* <kbd class="platform-mac platform-windows">Ctrl+Shift+U</kbd><kbd class="platform-linux">Alt+U</kbd> - Переключить меню, чтобы изменить кодировку файла
 
-If you pull up the file encoding dialog, you can choose an alternate file encoding to save your file in.
+Если вы откроете диалоговое окно кодировки файлов, вы можете выбрать альтернативную кодировку файлов для сохранения вашего файла.
 
-When you open a file, Atom will try to auto-detect the encoding. If Atom can't identify the encoding, the encoding will default to UTF-8, which is also the default encoding for new files.
+Когда вы открываете файл, Atom попытается автоматически определить кодировку. Если Atom не может определить кодировку, кодировка по умолчанию будет UTF-8, которая также является кодировкой по умолчанию для новых файлов.
 
 ![Changing your file encoding](../../images/encodings.png)
+![Changing your file encoding](../images/encodings.png)
 
-If you pull up the encoding menu and change the active encoding to something else, the file will be written out in that encoding the next time you save the file.
+Если вы откроете меню кодирования и измените активную кодировку на другую, файл будет записан в этой кодировке при следующем сохранении файла.
 
-The encoding selector is implemented in the [encoding-selector](https://github.com/atom/encoding-selector) package.
+Селектор кодирования реализован в пакете [encoding-selector](https://github.com/atom/encoding-selector).
