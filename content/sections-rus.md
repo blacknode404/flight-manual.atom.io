@@ -16,7 +16,7 @@ title: Sections
     - [Atom Selections - Выбор Atom'a](./using-atom/sections/atom-basics-rus.md)
     - [Editing and Deleting Text - Редактирование и удаление текста](./using-atom/sections/editing-and-deleting-text-rus.md)
     - [Find and Replace - Найти и заменить](./using-atom/sections/find-and-replace-rus.md)
-    - [Snippets - Обрывки](./using-atom/sections/snippets-rus.md)
+    - [Snippets - Фрагменты Кода](./using-atom/sections/snippets-rus.md)
     - [Autocomplete - Автозаполнение](./using-atom/sections/autocomplete-rus.md)
     - [Folding - Раскладной](./using-atom/sections/folding-rus.md)
     - [Panes - Панели](./using-atom/sections/panes-rus.md)

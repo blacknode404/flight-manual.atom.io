@@ -2,11 +2,13 @@
 title: Snippets
 ---
 ### Snippets
-Snippets are an incredibly powerful way to quickly generate commonly needed code syntax from a shortcut.
+**Фрагменты Кода**
 
-The idea is that you can type something like `habtm` and then press the <kbd class="platform-all">Tab</kbd> key and it will expand into `has_and_belongs_to_many`.
+Фрагменты кода являются невероятно мощным способом быстрой генерации часто необходимого синтаксиса кода из ярлыка.
 
-Many Core and Community packages come bundled with their own snippets that are specific to it. For example, the `language-html` package that provides support for HTML syntax highlighting and grammar comes with dozens of snippets to create many of the various HTML tags you might want to use. If you create a new HTML file in Atom, you can type `html` and then press <kbd class="platform-all">Tab</kbd> and it will expand to:
+Идея заключается в том , что вы можете ввести что - то вроде `habtm`, а затем нажмете кнопку <kbd class="platform-all">Tab</kbd>, и она будет расширяться в `has_and_belongs_to_many`.
+
+Многие Core Packages и Community Packages поставляются в комплекте со своими собственными фрагментами, специфичными для него. Например, пакет  `language-html`, который обеспечивает поддержку подсветки синтаксиса HTML и грамматики, поставляется с десятками фрагментов для создания множества различных тегов HTML, которые вы, возможно, захотите использовать. Если вы создаете новый HTML-файл в Atom, вы можете ввести, `html` а затем нажать, <kbd class="platform-all">Tab</kbd> и, если вы не устанавливали других плагинов перекрывающих этот фрагмент, он расширится до:
 
 ```html
 <!DOCTYPE html>
@@ -21,23 +23,26 @@ Many Core and Community packages come bundled with their own snippets that are s
 </html>
 ```
 
-It will also position the cursor in the `lang` attribute value so you can edit it if necessary. Many snippets have multiple focus points that you can move through with the <kbd class="platform-all">Tab</kbd> key as well - for instance, in the case of this HTML snippet, after the cursor is placed in the `lang` attribute value, you can continue pressing <kbd class="platform-all">Tab</kbd> and the cursor will move to the `dir` attribute value, then to the middle of the `title` tag, then finally to the middle of the `body` tag.
+Он также установит курсор в значение атрибута `lang`, чтобы вы могли редактировать его при необходимости. Многие фрагменты имеют несколько точек фокусировки, через которые вы также можете перемещаться с помощью клавиши <kbd class="platform-all">Tab</kbd> - например, в случае этого фрагмента HTML, после того, как курсор помещен в значение атрибута `lang` вы можете продолжить нажатие <kbd class="platform-all">Tab</kbd> и курсор перейдет в значение атрибута `dir`, затем к середине тега `title`, затем, наконец, к середине тега `body`.
 
-To see all the available snippets for the file type that you currently have open, choose "Snippets: Available" in the Command Palette.
+Чтобы просмотреть все доступные фрагменты для типа файла, который у вас открыт в данный момент, выберите "Snippets: Available" в Command Palette.
 
 ![View all available snippets](../../images/snippets.png "View all available snippets")
+![View all available snippets](../images/snippets.png "View all available snippets")
 
-You can also use fuzzy search to filter this list down by typing in the selection box. Selecting one of them will execute the snippet where your cursor is (or multiple cursors are).
+Вы также можете использовать Fuzzy Finder, чтобы отфильтровать этот список, введя в поле выбора. Выбор одного из них выполнит фрагмент, где находится ваш курсор (или несколько курсоров).
 
 #### Creating Your Own Snippets
+**Создание Ваших Собственных Фрагментов**
 
-So that's pretty cool, but what if there is something the language package didn't include or something that is custom to the code you write? Luckily it's incredibly easy to add your own snippets.
+Так что это круто, но что, если есть что-то, чего не включил языковой пакет, или что-то нестандартное для написанного вами кода? К счастью, невероятно легко добавлять свои собственные фрагменты.
 
-There is a text file in your <span class="platform-mac platform-linux">`~/.atom`</span><span class="platform-windows">`%USERPROFILE%\.atom`</span> directory called `snippets.cson` that contains all your custom snippets that are loaded when you launch Atom. You can also easily open up that file by selecting the <span class="platform-mac">_Atom > Snippets_</span><span class="platform-linux">_Edit > Snippets_</span><span class="platform-windows">_File > Snippets_</span> menu.
+В вашем каталоге <span class="platform-mac platform-linux">`~/.atom`</span> <span class="platform-windows">`%USERPROFILE%\.atom`</span> есть текстовый файл `snippets.cson`, который содержит все ваши пользовательские фрагменты, которые загружаются при запуске Atom. Вы также можете легко открыть этот файл, выбрав пункт <span class="platform-mac">_Atom > Snippets_</span> | <span class="platform-linux">_Edit > Snippets_</span> | <span class="platform-windows">_File > Snippets_</span>.
 
 ##### Snippet Format
+**Формат Фрагмента**
 
-So let's look at how to write a snippet. The basic snippet format looks like this:
+Итак, давайте посмотрим, как написать фрагмент. Основной формат фрагмента выглядит следующим образом:
 
 ```coffee
 '.source.js':
@@ -46,37 +51,39 @@ So let's look at how to write a snippet. The basic snippet format looks like thi
     'body': 'console.log(${1:"crash"});$2'
 ```
 
-The leftmost keys are the selectors where these snippets should be active. The easiest way to determine what this should be is to go to the language package of the language you want to add a snippet for and look for the "Scope" string.
+Крайние левые ключи - это селекторы, в которых эти фрагменты должны быть активными. Самый простой способ определить, что это должно быть, - перейти к языковому пакету языка, для которого вы хотите добавить фрагмент кода, и найти строку "Scope".
 
-For example, if we wanted to add a snippet that would work for Java files, we would look up the `language-java` package in our Settings view and we can see the Scope is `source.java`. Then the top level snippet key would be that prepended by a period (like a CSS class selector would do).
+Например, если мы хотим добавить фрагмент, который будет работать для файлов Java, мы бы посмотрели пакет `language-java` в нашем Settings View и увидели, что Scope у нас `source.java`. Тогда ключом фрагмента верхнего уровня будет `source.java`, которому предшествует точка (как сделал бы селектор класса CSS).
 
 ![Finding the selector scope for a snippet](../../images/snippet-scope.png "Finding the selector scope for a snippet")
+![Finding the selector scope for a snippet](../images/snippet-scope.png "Finding the selector scope for a snippet")
 
-The next level of keys are the snippet names. These are used for describing the snippet in a more readable way in the snippet menu. You can name them whatever you want.
+Следующим ключом является имя фрагмента. Оно используется для описания фрагмента в более читаемом виде в меню фрагмента. Вы можете назвать их как хотите.
 
-Under each snippet name is a `prefix` that should trigger the snippet and a `body` to insert when the snippet is triggered.
+Под каждым именем фрагмента находится элемент `prefix`, который должен запускать фрагмент, и элемент `body`, вставляемый при запуске фрагмента.
 
-Each `$` followed by a number is a tab stop. Tab stops are cycled through by pressing <kbd class="platform-all">Tab</kbd> once a snippet has been triggered.
+Каждый, `$` за которым следует номер, является табуляцией. Остановки табуляции циклически повторяются нажатием <kbd class="platform-all">Tab</kbd> после запуска фрагмента.
 
-Tab stops with the same number will create multiple cursors.
+Закладки с одинаковым номером создадут несколько курсоров.
 
-The above example adds a `log` snippet to JavaScript files that would expand to:
+Приведенный выше пример добавляет `log` фрагмент к файлам JavaScript, который будет расширяться до:
 
 ```javascript
 console.log("crash");
 ```
 
-The string `"crash"` would be initially selected and pressing tab again would place the cursor after the `;`
+Первоначально будет выбрана строка `"crash"`, и при повторном нажатии клавиши Tab будет установлен курсор после `;`
 
 {{#warning}}
 
-Snippet keys, unlike CSS selectors, can only be repeated once per level. If there are duplicate keys at the same level, then only the last one will be read. See [Configuring with CSON](/using-atom/sections/basic-customization/#configuring-with-cson) for more information.
+Ключи фрагментов, в отличие от селекторов CSS, могут повторяться только один раз для каждого уровня. Если на том же уровне есть дубликаты ключей, то будет прочитан только последний. см. [Настройка с CSON](/using-atom/sections/basic-customization/#configuring-with-cson) для получения дополнительной информации.
 
 {{/warning}}
 
 ##### Multi-line Snippet Body
+**Многострочный Фрагмент Кода**
 
-You can also use [CoffeeScript multi-line syntax](http://coffeescript.org/#strings) using `"""` for larger templates:
+Вы можете также использовать [многострочный синтаксис CoffeeScript](http://coffeescript.org/#strings), используя `"""` для больших шаблонов:
 
 ```coffee
 '.source.js':
@@ -93,7 +100,7 @@ You can also use [CoffeeScript multi-line syntax](http://coffeescript.org/#strin
     """
 ```
 
-As you might expect, there is a snippet to create snippets. If you open up a snippets file and type `snip` and then press <kbd class="platform-all">Tab</kbd>, you will get the following text inserted:
+Как и следовало ожидать, есть фрагмент для создания фрагментов. Если вы откроете файл `snippets.cson`, наберете `snip` а затем нажмете <kbd class="platform-all">Tab</kbd>, вы получите следующий текст:
 
 ```coffee
 '.source.js':
@@ -102,11 +109,12 @@ As you might expect, there is a snippet to create snippets. If you open up a sni
     'body': 'Hello World!'
 ```
 
-:boom: just fill that bad boy out and you have yourself a snippet. As soon as you save the file, Atom should reload the snippets and you will immediately be able to try it out.
+Просто заполните своими данными, и у вас будет фрагмент. Как только вы сохраните файл, Atom должен перезагрузить фрагменты, и вы сразу сможете его опробовать.
 
 ##### Multiple Snippets per Source
+**Несколько Фрагментов на Источник**
 
-You can see below the format for including multiple snippets for the same scope in your `snippets.cson` file. Just include the snippet name, prefix, and body keys for additional snippets inside the scope key:
+Ниже вы можете увидеть формат для включения нескольких фрагментов для одной и той же области в вашем файле `snippets.cson`. Просто включите имя фрагмента, префикс и ключи тела для дополнительных фрагментов внутри ключа области действия:
 
 ```coffee
 '.source.gfm':
@@ -123,10 +131,11 @@ You can see below the format for including multiple snippets for the same scope 
     'body': '![GitHub Octocat](https://assets-cdn.github.com/images/modules/logos_page/Octocat.png)'
 ```
 
-Again, see [Configuring with CSON](/using-atom/sections/basic-customization/#configuring-with-cson) for more information on CSON key structure and non-repeatability.
+Снова, смотрите [Настройка с CSON](/using-atom/sections/basic-customization/#configuring-with-cson) для получения дополнительной информации о структуре ключа CSON и неповторяемости.
 
 #### More Info
+**Больше Информации**
 
-The snippets functionality is implemented in the [snippets](https://github.com/atom/snippets) package.
+Функциональность фрагментов реализована в пакете [snippets](https://github.com/atom/snippets).
 
-For more examples, see the snippets in the [language-html](https://github.com/atom/language-html/blob/master/snippets/language-html.cson) and [language-javascript](https://github.com/atom/language-javascript/blob/master/snippets/language-javascript.cson) packages.
+Дополнительные примеры см. в фрагментах пакетов [language-html](https://github.com/atom/language-html/blob/master/snippets/language-html.cson) и [language-javascript](https://github.com/atom/language-javascript/blob/master/snippets/language-javascript.cson).

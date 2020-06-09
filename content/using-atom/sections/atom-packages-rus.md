@@ -4,9 +4,9 @@ title: Atom Packages
 ### Atom Packages
 **Atom Пакеты**
 
-Сначала мы начнем с системы пакетов Atom. Как мы упоминали ранее, сам Atom - это базовое ядро ​​функциональности, которое поставляется с рядом полезных пакетов, которые добавляют новые функции, такие как [Tree View](https://github.com/atom/tree-view) и [Settings View](https://github.com/atom/settings-view).
+Сначала мы начнем с системы пакетов Atom. Как мы упоминали ранее, сам Atom - это базовое ядро ​​функциональности, которое поставляется с рядом полезных пакетов, которые добавляют новые функции, такие как [tree-view](https://github.com/atom/tree-view) и [settings-view](https://github.com/atom/settings-view).
 
-На самом деле, существует более 80 пакетов, которые содержат все функции, доступные в Atom по умолчанию. Например, [Welcome Screen](https://github.com/atom/welcome) который вы видите при первом запуске Atom, [Spell Checker](https://github.com/atom/spell-check), [Themes](https://github.com/atom/one-dark-ui) и [Fuzzy Finder](https://github.com/atom/fuzzy-finder) a- это пакеты, которые обслуживаются отдельно и все используют те же API, к которым у вас есть доступ, как мы увидим в главе [Взлом Atom'a](/hacking-atom/).
+На самом деле, существует более 80 пакетов, которые содержат все функции, доступные в Atom по умолчанию. Например, [welcome](https://github.com/atom/welcome) который вы видите при первом запуске Atom, [spell-checker](https://github.com/atom/spell-check), [one-dark-ui](https://github.com/atom/one-dark-ui) и [fuzzy-finder](https://github.com/atom/fuzzy-finder) - это пакеты, которые обслуживаются отдельно и все используют те же API, к которым у вас есть доступ, как мы увидим в главе [Взлом Atom'a](/hacking-atom/).
 
 Это означает, что пакеты могут быть невероятно мощными и могут изменить все: от внешнего вида всего интерфейса до базовой работы даже основных функций.
 
@@ -70,7 +70,7 @@ $ apm help install
 * `apm install <package_name>` установить последнюю версию.
 * `apm install <package_name>@<package_version>` установить конкретную версию.
 
-Например, `apm install emmet@0.1.5` устанавливает `0.1.5` выпуск пакета [Emmet](https://github.com/atom/emmet).
+Например, `apm install emmet@0.1.5` устанавливает `0.1.5` выпуск пакета [emmet](https://github.com/atom/emmet).
 
 Вы также можете использовать `apm`, чтобы найти новые пакеты для установки. Если вы запустите `apm search`, вы можете выполнить поиск в реестре пакетов по запросу.
 
