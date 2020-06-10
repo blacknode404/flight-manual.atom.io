@@ -3,12 +3,13 @@ title: Folding
 ---
 ### Folding
 
-If you want to see an overview of the structure of the code file you're working on, folding can be a helpful tool. Folding hides blocks of code such as functions or looping blocks in order to simplify what is on your screen.
+Если вы хотите увидеть обзор структуры файла кода, над которым вы работаете, сворачивание может быть полезным инструментом. Складывание скрывает блоки кода, такие как функции или блоки циклов, чтобы упростить то, что находится на вашем экране.
 
-You can fold blocks of code by clicking the arrows that appear when you hover your mouse cursor over the gutter. You can also fold and unfold from the keyboard with the <kbd class="platform-mac">Alt+Cmd+[</kbd><kbd class="platform-windows platform-linux">Alt+Ctrl+[</kbd> and <kbd class="platform-mac">Alt+Cmd+]</kbd><kbd class="platform-windows platform-linux">Alt+Ctrl+]</kbd> keybindings.
+Вы можете сложить блоки кода, щелкая стрелки, появляющиеся при наведении курсора мыши на желоб. Кроме того, можно складывать и раскладывать с привязками клавиатуры <kbd class="platform-mac">Alt+Cmd+[</kbd><kbd class="platform-windows platform-linux">Alt+Ctrl+[</kbd> and <kbd class="platform-mac">Alt+Cmd+]</kbd><kbd class="platform-windows platform-linux">Alt+Ctrl+]</kbd>.
 
 ![Code folding example](../../images/folding.png "Code folding example")
+![Code folding example](../images/folding.png "Code folding example")
 
-To fold everything, use <kbd class="platform-mac">Alt+Cmd+Shift+[</kbd><kbd class="platform-windows platform-linux">Alt+Ctrl+Shift+[</kbd> and to unfold everything use <kbd class="platform-mac">Alt+Cmd+Shift+]</kbd><kbd class="platform-windows platform-linux">Alt+Ctrl+Shift+]</kbd>. You can also fold at a specific indentation level with <kbd class="platform-mac">Cmd+K</kbd><kbd class="platform-windows platform-linux">Ctrl+K</kbd> <kbd class="platform-mac">Cmd+0-9</kbd><kbd class="platform-windows platform-linux">Ctrl+0-9</kbd> where the number is the indentation depth.
+Чтобы сложить все, используйте <kbd class="platform-mac">Alt+Cmd+Shift+[</kbd><kbd class="platform-windows platform-linux">Alt+Ctrl+Shift+[</kbd> и чтобы развернуть все используйте <kbd class="platform-mac">Alt+Cmd+Shift+]</kbd><kbd class="platform-windows platform-linux">Alt+Ctrl+Shift+]</kbd>. Вы также можете сложить на определенном уровне отступа <kbd class="platform-mac">Cmd+K</kbd><kbd class="platform-windows platform-linux">Ctrl+K</kbd> <kbd class="platform-mac">Cmd+0-9</kbd><kbd class="platform-windows platform-linux">Ctrl+0-9</kbd>, где число является глубиной отступа.
 
-Finally, you can fold arbitrary sections of your code or text by making a selection and then typing <kbd class="platform-mac">Alt+Cmd+Ctrl+F</kbd><kbd class="platform-windows platform-linux">Alt+Ctrl+F</kbd> or choosing "Fold Selection" in the Command Palette.
+Наконец, вы можете сложить произвольные разделы вашего кода или текста, сделав выделение, а затем нажав <kbd class="platform-mac">Alt+Cmd+Ctrl+F</kbd><kbd class="platform-windows platform-linux">Alt+Ctrl+F</kbd> или выбрав "Fold Selection" в Command Palette.
