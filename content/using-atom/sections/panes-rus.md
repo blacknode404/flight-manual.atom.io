@@ -2,17 +2,19 @@
 title: Panes
 ---
 ### Panes
+**Панели**
 
-You can split any editor pane horizontally or vertically by using <kbd class="platform-mac">Cmd+K</kbd><kbd class="platform-windows platform-linux">Ctrl+K</kbd> <kbd class="platform-all">Up/Down/Left/Right</kbd> where the direction key is the direction to split the pane. Once you have a split pane, you can switch between them with <kbd class="platform-mac">Cmd+K</kbd><kbd class="platform-windows platform-linux">Ctrl+K</kbd> <kbd class="platform-mac">Cmd+Up/Down/Left/Right</kbd><kbd class="platform-windows platform-linux">Ctrl+Up/Down/Left/Right</kbd> where the direction is the direction the focus should move to.
+Вы можете разделить любую панель редактора по горизонтали или вертикали, используя, <kbd class="platform-mac">Cmd+K</kbd><kbd class="platform-windows platform-linux">Ctrl+K</kbd> <kbd class="platform-all">Up/Down/Left/Right</kbd> где клавиша направления - это направление для разделения панели. Когда у вас есть разделенные панели, вы можете переключаться между ними, <kbd class="platform-mac">Cmd+K</kbd><kbd class="platform-windows platform-linux">Ctrl+K</kbd> <kbd class="platform-mac">Cmd+Up/Down/Left/Right</kbd><kbd class="platform-windows platform-linux">Ctrl+Up/Down/Left/Right</kbd> где направление - это направление, в котором должен двигаться фокус.
 
 ![Multiple panes](../../images/panes.png "Multiple panes")
+![Multiple panes](../images/panes.png "Multiple panes")
 
-Each pane has its own "pane items", which are represented by tabs. You can move the files from pane to pane by dragging them with the mouse and dropping them in the pane you want that file to be in.
+Каждая панель имеет свои "pane items", которые представлены вкладками. Вы можете перемещать файлы с панели на панель, перетаскивая их мышью и опуская их на панель, в которой вы хотите, чтобы этот файл находился.
 
 {{#tip}}
 
-If you don't like using tabs, you don't have to. You can disable the [tabs package](https://github.com/atom/tabs) and each pane will still support multiple pane items. You just won't have tabs to use to click between them.
+Если вам не нравится использовать вкладки, вам не нужно. Вы можете отключить [tabs package](https://github.com/atom/tabs) и каждая панель будет по-прежнему поддерживать несколько элементов панели. У вас просто не будет вкладок для перехода между ними.
 
 {{/tip}}
 
-To close a pane, you can close all pane items with <kbd class="platform-mac">Cmd+W</kbd><kbd class="platform-windows platform-linux">Ctrl+W</kbd>. You can configure whether panes auto-close when empty in the Settings View with the "Remove Empty Panes" setting under Core Settings.
+Чтобы закрыть панель, вы можете закрыть все элементы панели с помощью <kbd class="platform-mac">Cmd+W</kbd><kbd class="platform-windows platform-linux">Ctrl+W</kbd>. Вы можете настроить автоматическое закрытие панелей, когда они пусты, в Settings View с помощью параметра "Remove Empty Panes" в разделе Core Settings.
