@@ -22,7 +22,7 @@ title: Sections
     - [Panes - Панели](./using-atom/sections/panes-rus.md)
     - [Pending Pane Items - Элементы ожидающей панели](./using-atom/sections/pending-pane-items-rus.md)
     - [Grammar - Грамматика](./using-atom/sections/grammar-rus.md)
-    - [Version Control in Atom - Контроль версий в Atom](./sections/version-control-in-atom-rus.md)
+    - [Version Control in Atom - Контроль версий в Atom](./using-atom/sections/version-control-in-atom-rus.md)
     - [GitHub package - Пакет GitHub](./using-atom/sections/github-package-rus.md)
     - [Writing in Atom - Запись в Atom](./using-atom/sections/writing-in-atom-rus.md)
     - [Basic Customization - Основные Настройки](./using-atom/sections/basic-customization-rus.md)
