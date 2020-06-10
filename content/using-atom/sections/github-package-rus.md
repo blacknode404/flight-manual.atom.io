@@ -2,162 +2,194 @@
 title: GitHub package
 ---
 ### GitHub package
+**Пакет GitHub**
 
-The github package brings Git and GitHub integration right inside Atom.
+Пакет github обеспечивает интеграцию Git и GitHub прямо внутри Atom.
 
-- [Initialize](#initialize-repositories)
-- [Clone](#clone-repositories)
-- [Branch](#branch)
-- [Stage](#stage)
-- [Discard](#discard-changes)
-- [Commit](#commit)
-- [Amend and undo](#amend-and-undo)
-- [Publish and push](#publish-and-push)
-- [Fetch and pull](#fetch-and-pull)
-- [Resolve conflicts](#resolve-conflicts)
-- [Create a Pull Request](#create-a-pull-request)
-- [View Pull Requests](#view-pull-requests)
-- [Checkout a Pull Request](#checkout-a-pull-request)
-- [Open any Issue or Pull Request](#open-any-issue-or-pull-request)
-- [View Pull Request review comments](#view-pull-request-review-comments)
-- [Navigate Pull Request review comments](#navigate-pull-request-review-comments)
-- [Respond to a Pull Request review comment](#respond-to-a-pull-request-review-comment)
+- [Initialize / Инициализация](#initialize-repositories)
+- [Clone / Клон](#clone-repositories)
+- [Branch / Ветвь](#branch)
+- [Stage / Постановка](#stage)
+- [Discard / Отменить](#discard-changes)
+- [Commit / Коммит](#commit)
+- [Amend and undo / Изменить и отменить](#amend-and-undo)
+- [Publish and push / Опубликовать и продовить](#publish-and-push)
+- [Fetch and pull / Получить и вытащить](#fetch-and-pull)
+- [Resolve conflicts / Разрешить конфликты](#resolve-conflicts)
+- [Create a Pull Request / Создать запрос на извлечение](#create-a-pull-request)
+- [View Pull Requests / Просмотр запросов на извлечение](#view-pull-requests)
+- [Checkout a Pull Request / Оформить запрос на извлечение](#checkout-a-pull-request)
+- [Open any Issue or Pull Request / Откройте любой вопрос или запрос на извлечение](#open-any-issue-or-pull-request)
+- [View Pull Request review comments / Просмотреть комментарии по запросу на Pull](#view-pull-request-review-comments)
+- [Navigate Pull Request review comments / Navigate Pull Request обзор комментариев](#navigate-pull-request-review-comments)
+- [Respond to a Pull Request review comment / Ответить на комментарий к запросу о вытягивании](#respond-to-a-pull-request-review-comment)
 
-Most of the functionality lives within the Git and GitHub dock items.
+Большая часть функциональности находится в элементах стыковки Git и GitHub.
 
 ![The Git and GitHub panels](../../images/github-panels.png "The Git and GitHub panels")
+![The Git and GitHub panels](../images/github-panels.png "The Git and GitHub panels")
 
-There are different ways to access them, probably the most common way is through their keybindings:
+Есть разные способы доступа к ним, вероятно, самый распространенный способ - через их сочетания клавиш:
 
-- Open the **Git** panel: <kbd class=".platform-all">Ctrl+9</kbd>
-- Open the **GitHub** panel: <kbd class=".platform-all">Ctrl+8</kbd>
+- Откройте панель **Git**: <kbd class=".platform-all">Ctrl+9</kbd>
+- Откройте панель **GitHub**: <kbd class=".platform-all">Ctrl+8</kbd>
 
-Another way is from the menu: `Packages -> GitHub -> Toggle Git Tab and Toggle GitHub Tab`
+Другой способ из меню: `Packages -> GitHub -> Toggle Git Tab и Toggle GitHub Tab`
 
-Or you can also toggle the Git panel from the Status Bar by clicking on the changed files icon:
+Или вы также можете переключить панель Git из строки состояния, нажав на значок измененных файлов:
 
 ![Open Git panel](../../images/github-open-git-panel.png "Open Git panel")
+![Open Git panel](../images/github-open-git-panel.png "Open Git panel")
 
 
 ---
 
 #### Initialize repositories
+**Инициализировать репозитории**
 
-In case a project doesn't have a Git repository yet, you can create one from the Git panel.
+Если у проекта еще нет репозитория Git, вы можете создать его из панели Git.
 
 ![Initialize repositories](../../images/github-initialize.png "Initialize repositories")
+![Initialize repositories](../images/github-initialize.png "Initialize repositories")
 
 
 #### Clone repositories
+**Клонирование репозиториев**
 
-To clone a repository, open the GitHub panel while you have no project folders open in Atom and click "Clone an existing GitHub repository". In the dialog, paste the URL of a repository and click "Clone". The new project will be added to the Tree View.
+Чтобы клонировать репозиторий, откройте панель GitHub, когда у вас нет открытых папок проекта в Atom, и нажмите "Clone an existing GitHub repository". В диалоговом окне вставьте URL-адрес хранилища и нажмите "Clone". Новый проект будет добавлен в Tree View.
 
 ![GitHub panel](../../images/github-without-projects.png "GitHub panel without projects")
+![GitHub panel](../images/github-without-projects.png "GitHub panel without projects")
 
 ![Clone dialog](../../images/github-clone.png "Clone repositories")
+![Clone dialog](../images/github-clone.png "Clone repositories")
 
-Alternately, run the `GitHub: Clone` command to open the Clone dialog any time.
+В качестве альтернативы, запустите команду `GitHub: Clone`, чтобы в любое время открыть диалог клонирования.
 
 #### Branch
+**Ветвь**
 
-To open the branch tooltip, click the branch icon in the Status Bar. From there you can **create** or **switch** branches.
+Чтобы открыть подсказку о ветке, щелкните значок ветки в Status Bar. Оттуда вы можете **create** или **switch** ветвь.
 
 ![Create or switch branches](../../images/github-branch.png "Create or switch branches")
+![Create or switch branches](../images/github-branch.png "Create or switch branches")
 
 
 #### Stage
+**Постановка**
 
-After making some changes, **stage** anything you want to be part of the next commit. Choose between staging...
+После внесения некоторых изменений, **stage** все, что хотите, чтобы стать частью следующего коммита. Выбирай между постановкой...
 
-- **All changes**: Click the "Stage All" button in the "Unstaged Changes" bar.
-- **Files**: Double-click a file or select a file and press <kbd class=".platform-all">Enter</kbd>.
-- **Hunk**: Click on the "Stage Hunk" button or select a hunk and press <kbd class=".platform-all">Enter</kbd>.
-- **Lines**: Click on a line (or drag on multiple lines) to select, then click on the "Stage Selection" button. Or use the <kbd class="platform-mac">Cmd-/</kbd><kbd class="platform-windows platform-linux">Cmd-/</kbd> key to toggle from hunk mode to line mode, then press <kbd class="platform-mac">Cmd-Enter</kbd><kbd class="platform-windows platform-linux">Ctrl-Enter</kbd> to stage just a single line.
+- **All changes**: нажмите кнопку "Stage All" на панели "Unstaged Changes".
+- **Files**: дважды щелкните файл или выберите файл и нажмите <kbd class=".platform-all">Enter</kbd>.
+- **Hunk**: нажмите кнопку "Stage Hunk" или выберите блок и нажмите <kbd class=".platform-all">Enter</kbd>.
+- **Lines**: нажмите на линию (или перетащите на несколько строк), чтобы выбрать, затем нажмите кнопку "Stage Selection". Или используйте клавишу <kbd class="platform-mac">Cmd-/</kbd><kbd class="platform-windows platform-linux">Cmd-/</kbd> для переключения из режима блокировки в режим строки, а затем нажмите <kbd class="platform-mac">Cmd-Enter</kbd><kbd class="platform-windows platform-linux">Ctrl-Enter</kbd>, чтобы поставить только одну строку.
 
-Use the <kbd class="platform-mac">Cmd-Left</kbd><kbd class="platform-windows platform-linux">Ctrl-Left</kbd> or <kbd class="platform-mac">Cmd-Right</kbd><kbd class="platform-windows platform-linux">Ctrl-Right</kbd> arrow key to switch between file list and the diff view. Unstaging can be done in the same way.
+Используйте клавишу со стрелкой <kbd class="platform-mac">Cmd-Left</kbd><kbd class="platform-windows platform-linux">Ctrl-Left</kbd> или <kbd class="platform-mac">Cmd-Right</kbd><kbd class="platform-windows platform-linux">Ctrl-Right</kbd> для переключения между списком файлов и Diff View. Unstaging может быть сделано таким же образом.
 
 ![Stage changes](../../images/github-stage.png "Stage changes")
+![Stage changes](../images/github-stage.png "Stage changes")
 
 
 #### Discard changes
+**Отменить изменения**
 
-If you no longer want to keep some changes, you can discard them. It's similar to staging, but accessible behind a context menu.
+Если вы больше не хотите сохранять какие-либо изменения, вы можете отменить их. Это похоже на постановку, но доступно через контекстное меню.
 
-- **All changes**: Click the <kbd>...</kbd> menu in the "Unstaged Changes" header and choose "Discard All Changes".
-- **Files**: Right-click a file (or multiple) and choose "Discard Changes".
-- **Hunk**: Click on the trash icon in the top bar of a hunk.
-- **Lines**: Right-click on a line (or multiple) and choose "Discard Selection".
+- **All changes**: щелкните меню <kbd>...</kbd> в заголовке "Unstaged Changes" и выберите "Discard All Changes".
+- **Files**: щелкните правой кнопкой мыши файл (или несколько файлов) и выберите "Discard Changes".
+- **Hunk**: нажмите на значок корзины в верхней панели hunk.
+- **Lines**: щелкните правой кнопкой мыши по строке (или нескольким) и выберите "Discard Selection".
 
 ![Discard changes](../../images/github-discard.png "Discard changes")
+![Discard changes](../images/github-discard.png "Discard changes")
 
 
 #### Commit Preview
+**Коммит предварительный просмотр**
 
-To double check **all changes** that are going into your next commit, click the "**See All Staged Changes**" button above the commit message box. It lets you see all of your staged changes in a single pane. This "commit preview" can also serve as an inspiration for writing the commit message.
+Чтобы дважды проверить **all changes**, которые будут внесены в ваш следующий коммит, нажмите кнопку "**See All Staged Changes**" над окном сообщения фиксации. Это позволяет вам увидеть все ваши поэтапные изменения в одной панели. Этот "commit preview" может также послужить источником вдохновения для написания сообщения о фиксации.
 
 ![Commit Preview](../../images/github-commit-preview.png "Commit Preview")
+![Commit Preview](../images/github-commit-preview.png "Commit Preview")
 
 
 #### Commit
+**Коммит**
 
-Once you've staged your changes, enter a commit **message**. Feel free to describe the commit in more detail after leaving an empty line. Finalize by clicking the **Commit** button. If you need more space, click the expand icon at the bottom right. It will open a commit editor in the center.
+После внесения изменений введите **message** о коммите. Не стесняйтесь описывать коммит более подробно, оставляя пустую строку. Завершите, нажав кнопку **Commit**. Если вам нужно больше места, щелкните значок расширения в правом нижнем углу. Откроется редактор коммитов в центре.
 
 ![Commit changes](../../images/github-commit.png "Commit changes")
+![Commit changes](../images/github-commit.png "Commit changes")
 
-To add multiple **co-authors** to a commit, click the "👤➕" icon in the bottom left corner of the commit message editor. Now you can search by name, email or GitHub username to give credit to a co-author.
+Чтобы добавить нескольких **co-authors** в коммит, нажмите кнопку-значок "👤➕" в левом нижнем углу редактора сообщений о коммитах. Теперь вы можете выполнять поиск по имени, электронной почте или имени пользователя GitHub, чтобы отдать должное соавтору.
 
 ![Commit with co-authors](../../images/github-commit-with-co-authors.png "Commit with co-authors")
+![Commit with co-authors](../images/github-commit-with-co-authors.png "Commit with co-authors")
 
 
 #### Amend and undo
+**Изменить и отменить**
 
-In case you forgot to commit a change and would like to add it to your previous commit, right-click on the last commit, then choose "Amend" from the context menu.
+Если вы забыли зафиксировать изменение и хотите добавить его в свой предыдущий коммит, щелкните правой кнопкой мыши последний коммит, затем выберите "Amend" в контекстном меню.
 
 ![Amend previous commit](../../images/github-amend.png "Amend previous commit")
+![Amend previous commit](../images/github-amend.png "Amend previous commit")
 
-If you want to edit the commit message of your last commit, or add/remove changes, click on the "Undo" button. It will roll back to the state just before you clicked on the commit button.
+Если вы хотите отредактировать сообщение о вашем последнем коммите или добавить / удалить изменения, нажмите кнопку "Undo". Он вернется к состоянию непосредственно перед тем, как вы нажмете кнопку фиксации.
 
 ![Undo previous commit](../../images/github-undo.png "Undo previous commit")
+![Undo previous commit](../images/github-undo.png "Undo previous commit")
 
 #### View commits
+**Посмотреть коммиты**
 
-Once you've made some commits, click on a commit message in the recent commit list to see the full diff and commit message associated with each:
+После того, как вы сделали некоторые коммиты, нажмите на сообщение коммита в списке недавних коммитов, чтобы увидеть полный Diff и сообщение о коммите, связанное с каждым:
 
 ![View commit detai](../../images/github-commit-detail.png "View commit detai")
+![View commit detai](../images/github-commit-detail.png "View commit detai")
 
 #### Publish and push
+**Опубликовать и продовить**
 
-When you're ready to share your changes with your team members, click the **Publish** button in the Status Bar. It will push your local branch to the remote repository. After making more commits, you can **Push** them as well from the Status Bar.
+Когда вы будете готовы поделиться своими изменениями с членами вашей команды, нажмите кнопку **Publish** в Status Bar. Это подтолкнет вашу локальную ветку к удаленному хранилищу. После того, как вы сделаете больше коммитов, вы также можете **Push** их из Status Bar.
 
 ![Publish and push commits](../../images/github-publish-push.png "Publish and push commits")
+![Publish and push commits](../images/github-publish-push.png "Publish and push commits")
 
 
 #### Fetch and pull
+**Получить и вытащить**
 
-From time to time it's a good idea to click on the **Fetch** button to see if any other team member pushed changes. If so, click on **Pull** to merge the changes into your local branch.
+Время от времени хорошей идеей будет нажимать на кнопку **Fetch**, чтобы посмотреть, не изменил ли кто-либо другой член команды. Если это так, нажмите **Pull**, чтобы объединить изменения с вашей локальной веткой.
 
 ![Fetch and pull commits](../../images/github-fetch-pull.png "Fetch and pull commits")
+![Fetch and pull commits](../images/github-fetch-pull.png "Fetch and pull commits")
 
-If you prefer to **rebase** when pulling, you can configure Git to make it the default behavior:
+Если вы предпочитаете делать **rebase** при извлечении, вы можете настроить Git, чтобы сделать его поведением по умолчанию:
 
 ```
 git config --global --bool pull.rebase true
 ```
 
-Learn more about [merge vs. rebase](https://mislav.net/2013/02/merge-vs-rebase/).
+Узнайте больше о [merge vs. rebase](https://mislav.net/2013/02/merge-vs-rebase/).
 
 #### Resolve conflicts
+**Разрешить конфликты**
 
-Sometimes there can be conflicts when trying to merge. Files that have merge conflicts will show up in the "Merge Conflicts" list. Click on a file to open the editor. There you can **resolve** the conflict by picking a version or make further edits. Once done, stage the file and commit.
+Иногда могут возникнуть конфликты при попытке слияния. Файлы с конфликтами при слиянии будут отображаться в списке "Merge Conflicts". Нажмите на файл, чтобы открыть редактор. Там вы можете **resolve** конфликт путем выбора версии или внесения дополнительных изменений. Как только вы закончите, подготовьте файл и зафиксируйте его.
 
 ![Resolve conflicts](../../images/github-resolve-conflicts.png "Resolve conflicts")
+![Resolve conflicts](../images/github-resolve-conflicts.png "Resolve conflicts")
 
 
 #### Create a Pull Request
+**Создать запрос на извлечение**
 
-When your changes are ready to be reviewed by your team members, open the "GitHub" panel <kbd>Ctrl+8</kbd> and click on **Open new pull request**. It will open the browser where you can continue creating a pull request. If commits haven't been pushed or the branch isn't published yet, the GitHub package will do that automatically for you.
+Когда ваши изменения будут готовы для проверки членами вашей команды, откройте панель "GitHub" <kbd>Ctrl+8</kbd> и нажмите **Open new pull request**. Откроется браузер, в котором вы можете продолжить создание запроса. Если коммиты не были отправлены или ветка еще не опубликована, пакет GitHub сделает это автоматически для вас.
 
 ![Create a Pull Request](../../images/github-create-a-pull-request.png "Create a Pull Request")
+![Create a Pull Request](../images/github-create-a-pull-request.png "Create a Pull Request")
 
 
 #### View Pull Requests
@@ -165,6 +197,7 @@ When your changes are ready to be reviewed by your team members, open the "GitHu
 Once the pull request is created, it will appear under **Current pull request** at the top of the panel. Underneath is a list of **Open pull requests**. It lets you quickly find a pull request by avatar, title or PR number. It also lets you keep an eye on the CI status. Clicking on a pull request in the list opens a center pane with more details, the timeline and conversations.
 
 ![View Pull Requests](../../images/github-view-pull-requests.png "View Pull Requests")
+![View Pull Requests](../images/github-view-pull-requests.png "View Pull Requests")
 
 
 #### Open any Issue or Pull Request
@@ -172,6 +205,7 @@ Once the pull request is created, it will appear under **Current pull request** 
 You can open issues or pull requests from any repo on GitHub. To do so, run the `GitHub: Open Issue Or Pull Request` command and paste the URL from an issue or pull request. Then press the **Open Issue or Pull Request** button and it will open a center pane. This lets you keep an issue or pull request as a reference, when working in another repo.
 
 ![Open Issue or Pull Request](../../images/github-open-issue-or-pull-request.png "Open Issue or Pull Request")
+![Open Issue or Pull Request](../images/github-open-issue-or-pull-request.png "Open Issue or Pull Request")
 
 
 #### Checkout a Pull Request
@@ -179,29 +213,35 @@ You can open issues or pull requests from any repo on GitHub. To do so, run the 
 To test a pull request locally, open it in the workspace center by clicking on the pull request in the "open pull requests" list from the GitHub tab, then click on the **Checkout** button. It will automatically create a local branch and pull all the changes. If you would like to contribute to that pull request, start making changes, commit and push. Your contribution is now part of that pull request.
 
 ![Checkout a pull request](../../images/github-checkout.png "Checkout a pull request")
+![Checkout a pull request](../images/github-checkout.png "Checkout a pull request")
 
 #### View Pull Request review comments
 
 To view review comments on a Pull Request, open the Reviews Tab from the **See Reviews** button from the footer of a Pull Request Pane. Alternatively, if the pull request has already been checked out, Reviews Tab can also be open from the same button on GitHub Tab.
 
 ![Open review tab from footer](../../images/github-see-review-footer.png "Open review tab from footer")
+![Open review tab from footer](../images/github-see-review-footer.png "Open review tab from footer")
 
 #### Navigate Pull Request review comments
 
 You can see all the review summaries and comments of a pull request in the Reviews Tab. The comment section has a progress bar to help you keep track of how close are you to finish addressing the Pull Request comments (i.e. marking all comment threads on a Pull Request as "resolved"). Comment threads are greyed out after they have been resolved.
 
 ![Review tab](../../images/github-review-tab.png "Review tab")
+![Review tab](../images/github-review-tab.png "Review tab")
 
 After the pull request branch has been checked out, you can click **Jump To File** to open the commented on file and make changes as per the review comment right in the editor. If you would like to get the full context of the review comment, click **Open Diff** to open the diff view with line highlighting.
 
 ![Jump to file from review tab](../../images/github-review-jump-to-file.png "Jump to file from review tab")
+![Jump to file from review tab](../images/github-review-jump-to-file.png "Jump to file from review tab")
 
 Conversely, in-editor comments are indicated by the comment icon in the gutter. Clicking the icon, either from within the editor or the diff view, will take you back to the Reviews Tab.
 
 ![Open review tab from diff](../../images/github-open-review-from-diff.png "Open review tab from diff")
+![Open review tab from diff](../images/github-open-review-from-diff.png "Open review tab from diff")
 
 #### Respond to a Pull Request review comment
 
 To respond to a Pull Request review comment, type your message and click **Comment**; a single line comment will be created in the same thread as the comment you responded to. After addressing a Pull Request review comment, click **Resolve conversation** to mark the whole thread as "resolved". The progress bar in the "Comments" section will update accordingly.
 
 ![Respond to a Pull Request review comment](../../images/github-review-reply.png "Respond to a Pull Request review comment")
+![Respond to a Pull Request review comment](../images/github-review-reply.png "Respond to a Pull Request review comment")
